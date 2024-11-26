@@ -1,0 +1,24 @@
+[0.026s] Invoking command in '/home/cao/ros2ws/build/hapthexa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_msgs -- -j4 -l4
+[0.174s] [  1%] Built target hapthexa_msgs__rosidl_generator_type_description
+[0.206s] [  1%] Built target ament_cmake_python_copy_hapthexa_msgs
+[0.229s] [  1%] Built target hapthexa_msgs__cpp
+[0.250s] [ 27%] Built target hapthexa_msgs__rosidl_generator_c
+[0.358s] [ 37%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_cpp
+[0.388s] [ 48%] Built target hapthexa_msgs__rosidl_typesupport_cpp
+[0.389s] [ 56%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_c
+[0.459s] [ 65%] Built target hapthexa_msgs__rosidl_typesupport_introspection_c
+[0.474s] [ 75%] Built target hapthexa_msgs__rosidl_typesupport_c
+[0.494s] [ 85%] Built target hapthexa_msgs__rosidl_typesupport_introspection_cpp
+[0.544s] [ 85%] Built target hapthexa_msgs
+[0.591s] [ 86%] Built target hapthexa_msgs__py
+[0.660s] [ 95%] Built target hapthexa_msgs__rosidl_generator_py
+[0.729s] [ 96%] Built target hapthexa_msgs_s__rosidl_typesupport_fastrtps_c
+[0.730s] [ 98%] Built target hapthexa_msgs_s__rosidl_typesupport_c
+[0.745s] [100%] Built target hapthexa_msgs_s__rosidl_typesupport_introspection_c
+[0.776s] running egg_info
+[0.808s] writing hapthexa_msgs.egg-info/PKG-INFO
+[0.809s] writing dependency_links to hapthexa_msgs.egg-info/dependency_links.txt
+[0.810s] writing top-level names to hapthexa_msgs.egg-info/top_level.txt
+[0.915s] reading manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+[0.916s] writing manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+[1.010s] [100%] Built target ament_cmake_python_build_hapthexa_msgs_egg

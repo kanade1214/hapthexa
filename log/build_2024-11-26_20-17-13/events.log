@@ -1,0 +1,585 @@
+[0.000000] (-) TimerEvent: {}
+[0.002000] (hapthexa_msgs) JobQueued: {'identifier': 'hapthexa_msgs', 'dependencies': OrderedDict()}
+[0.002143] (hapthexa_dxl_servo) JobQueued: {'identifier': 'hapthexa_dxl_servo', 'dependencies': OrderedDict({'hapthexa_msgs': '/home/cao/ros2ws/install/hapthexa_msgs'})}
+[0.002195] (hapthexa_main) JobQueued: {'identifier': 'hapthexa_main', 'dependencies': OrderedDict({'hapthexa_msgs': '/home/cao/ros2ws/install/hapthexa_msgs'})}
+[0.004405] (hapthexa_msgs) JobStarted: {'identifier': 'hapthexa_msgs'}
+[0.039665] (hapthexa_msgs) JobProgress: {'identifier': 'hapthexa_msgs', 'progress': 'cmake'}
+[0.039850] (hapthexa_msgs) JobProgress: {'identifier': 'hapthexa_msgs', 'progress': 'build'}
+[0.044632] (hapthexa_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cao/ros2ws/build/hapthexa_msgs', '--', '-j4', '-l4'], 'cwd': '/home/cao/ros2ws/build/hapthexa_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_msgs', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.104178] (-) TimerEvent: {}
+[0.205860] (-) TimerEvent: {}
+[0.307464] (-) TimerEvent: {}
+[0.312618] (hapthexa_msgs) StdoutLine: {'line': b'[  1%] Built target hapthexa_msgs__rosidl_generator_type_description\n'}
+[0.413959] (-) TimerEvent: {}
+[0.458700] (hapthexa_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_hapthexa_msgs\n'}
+[0.515945] (-) TimerEvent: {}
+[0.543263] (hapthexa_msgs) StdoutLine: {'line': b'[ 27%] Built target hapthexa_msgs__rosidl_generator_c\n'}
+[0.616594] (-) TimerEvent: {}
+[0.719212] (-) TimerEvent: {}
+[0.822062] (-) TimerEvent: {}
+[0.924155] (-) TimerEvent: {}
+[1.025926] (-) TimerEvent: {}
+[1.127448] (-) TimerEvent: {}
+[1.227933] (-) TimerEvent: {}
+[1.332418] (-) TimerEvent: {}
+[1.476896] (-) TimerEvent: {}
+[1.563166] (hapthexa_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.579791] (-) TimerEvent: {}
+[1.610350] (hapthexa_msgs) StdoutLine: {'line': b'writing hapthexa_msgs.egg-info/PKG-INFO\n'}
+[1.610644] (hapthexa_msgs) StdoutLine: {'line': b'writing dependency_links to hapthexa_msgs.egg-info/dependency_links.txt\n'}
+[1.612896] (hapthexa_msgs) StdoutLine: {'line': b'writing top-level names to hapthexa_msgs.egg-info/top_level.txt\n'}
+[1.683605] (-) TimerEvent: {}
+[1.784200] (-) TimerEvent: {}
+[1.820573] (hapthexa_msgs) StdoutLine: {'line': b"reading manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'\n"}
+[1.821051] (hapthexa_msgs) StdoutLine: {'line': b"writing manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'\n"}
+[1.886556] (-) TimerEvent: {}
+[1.989760] (-) TimerEvent: {}
+[2.009265] (hapthexa_msgs) StdoutLine: {'line': b'[ 27%] Built target ament_cmake_python_build_hapthexa_msgs_egg\n'}
+[2.091547] (-) TimerEvent: {}
+[2.142166] (hapthexa_msgs) StdoutLine: {'line': b'[ 36%] Built target hapthexa_msgs__rosidl_typesupport_introspection_c\n'}
+[2.191750] (-) TimerEvent: {}
+[2.224636] (hapthexa_msgs) StdoutLine: {'line': b'[ 46%] Built target hapthexa_msgs__rosidl_typesupport_c\n'}
+[2.292331] (-) TimerEvent: {}
+[2.341455] (hapthexa_msgs) StdoutLine: {'line': b'[ 56%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.392485] (-) TimerEvent: {}
+[2.450740] (hapthexa_msgs) StdoutLine: {'line': b'[ 56%] Built target hapthexa_msgs__cpp\n'}
+[2.495663] (-) TimerEvent: {}
+[2.564953] (hapthexa_msgs) StdoutLine: {'line': b'[ 65%] Built target hapthexa_msgs__rosidl_typesupport_cpp\n'}
+[2.597068] (-) TimerEvent: {}
+[2.701435] (-) TimerEvent: {}
+[2.740500] (hapthexa_msgs) StdoutLine: {'line': b'[ 75%] Built target hapthexa_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.801583] (-) TimerEvent: {}
+[2.877918] (hapthexa_msgs) StdoutLine: {'line': b'[ 85%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.901720] (-) TimerEvent: {}
+[2.954309] (hapthexa_msgs) StdoutLine: {'line': b'[ 85%] Built target hapthexa_msgs\n'}
+[3.004505] (-) TimerEvent: {}
+[3.068920] (hapthexa_msgs) StdoutLine: {'line': b'[ 86%] Built target hapthexa_msgs__py\n'}
+[3.105772] (-) TimerEvent: {}
+[3.178159] (hapthexa_msgs) StdoutLine: {'line': b'[ 95%] Built target hapthexa_msgs__rosidl_generator_py\n'}
+[3.206777] (-) TimerEvent: {}
+[3.296361] (hapthexa_msgs) StdoutLine: {'line': b'[ 96%] Built target hapthexa_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[3.306904] (-) TimerEvent: {}
+[3.359602] (hapthexa_msgs) StdoutLine: {'line': b'[ 98%] Built target hapthexa_msgs_s__rosidl_typesupport_c\n'}
+[3.409347] (-) TimerEvent: {}
+[3.482237] (hapthexa_msgs) StdoutLine: {'line': b'[100%] Built target hapthexa_msgs_s__rosidl_typesupport_introspection_c\n'}
+[3.509456] (-) TimerEvent: {}
+[3.559597] (hapthexa_msgs) CommandEnded: {'returncode': 0}
+[3.610569] (-) TimerEvent: {}
+[3.712072] (-) TimerEvent: {}
+[3.812924] (-) TimerEvent: {}
+[3.914702] (-) TimerEvent: {}
+[4.015618] (-) TimerEvent: {}
+[4.116329] (-) TimerEvent: {}
+[4.217597] (-) TimerEvent: {}
+[4.322203] (-) TimerEvent: {}
+[4.422593] (-) TimerEvent: {}
+[4.523178] (-) TimerEvent: {}
+[4.625094] (-) TimerEvent: {}
+[4.727615] (-) TimerEvent: {}
+[4.830840] (-) TimerEvent: {}
+[4.932599] (-) TimerEvent: {}
+[5.033569] (-) TimerEvent: {}
+[5.067598] (hapthexa_msgs) JobProgress: {'identifier': 'hapthexa_msgs', 'progress': 'install'}
+[5.133715] (-) TimerEvent: {}
+[5.151988] (hapthexa_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cao/ros2ws/build/hapthexa_msgs'], 'cwd': '/home/cao/ros2ws/build/hapthexa_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_msgs', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.176023] (hapthexa_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.177228] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/rosidl_interfaces/hapthexa_msgs\n'}
+[5.178143] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.json\n'}
+[5.178294] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.json\n'}
+[5.179106] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.json\n'}
+[5.179259] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.json\n'}
+[5.179365] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.json\n'}
+[5.179481] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.json\n'}
+[5.180765] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.json\n'}
+[5.180886] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.json\n'}
+[5.180986] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.json\n'}
+[5.181078] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.json\n'}
+[5.181234] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.json\n'}
+[5.181352] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.181482] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.183012] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/attitude.h\n'}
+[5.183550] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/empty.h\n'}
+[5.184057] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_position.h\n'}
+[5.184191] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_args.h\n'}
+[5.184309] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.184410] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__functions.c\n'}
+[5.185473] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__description.c\n'}
+[5.186424] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.h\n'}
+[5.187096] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.h\n'}
+[5.187323] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__functions.h\n'}
+[5.187451] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.c\n'}
+[5.188337] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__functions.c\n'}
+[5.188925] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.h\n'}
+[5.189417] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__struct.h\n'}
+[5.191002] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__struct.h\n'}
+[5.191227] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__struct.h\n'}
+[5.191361] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.c\n'}
+[5.191460] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__functions.c\n'}
+[5.192296] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.c\n'}
+[5.192462] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__struct.h\n'}
+[5.193152] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__description.c\n'}
+[5.193326] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__struct.h\n'}
+[5.193430] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__functions.h\n'}
+[5.194767] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.c\n'}
+[5.194955] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__description.c\n'}
+[5.195073] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__functions.c\n'}
+[5.196310] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__functions.c\n'}
+[5.196472] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__description.c\n'}
+[5.197683] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.c\n'}
+[5.197890] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.h\n'}
+[5.198045] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__functions.h\n'}
+[5.198220] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__functions.h\n'}
+[5.198368] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.h\n'}
+[5.198485] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__description.c\n'}
+[5.200278] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__functions.h\n'}
+[5.200418] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.201084] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/force_sensor.h\n'}
+[5.201768] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.201903] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_position.h\n'}
+[5.202007] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.202102] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__struct.h\n'}
+[5.202229] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.c\n'}
+[5.202320] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__description.c\n'}
+[5.202406] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.h\n'}
+[5.204085] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__functions.h\n'}
+[5.204831] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__functions.h\n'}
+[5.204981] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__description.c\n'}
+[5.205081] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.c\n'}
+[5.205215] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__struct.h\n'}
+[5.205322] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__functions.c\n'}
+[5.205411] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__functions.c\n'}
+[5.207242] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.h\n'}
+[5.207535] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_args.h\n'}
+[5.208326] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.208472] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg_args.h\n'}
+[5.209102] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/empty.h\n'}
+[5.209263] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/gait.h\n'}
+[5.209378] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.210255] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__functions.c\n'}
+[5.211005] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__struct.h\n'}
+[5.211147] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__description.c\n'}
+[5.211981] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.h\n'}
+[5.212957] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.c\n'}
+[5.213070] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__functions.c\n'}
+[5.213192] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__struct.h\n'}
+[5.213301] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__functions.c\n'}
+[5.215388] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__functions.c\n'}
+[5.215740] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__struct.h\n'}
+[5.215862] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.c\n'}
+[5.216313] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.h\n'}
+[5.216436] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__description.c\n'}
+[5.217137] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__struct.h\n'}
+[5.217306] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__functions.h\n'}
+[5.217406] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.h\n'}
+[5.219255] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__description.c\n'}
+[5.222967] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.c\n'}
+[5.225824] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__functions.h\n'}
+[5.225987] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__functions.h\n'}
+[5.226103] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.h\n'}
+[5.226283] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.c\n'}
+[5.226396] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__description.c\n'}
+[5.226498] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__functions.h\n'}
+[5.229768] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg.h\n'}
+[5.230070] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/library_path.sh\n'}
+[5.230224] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/library_path.dsv\n'}
+[5.230339] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_c.so\n'}
+[5.233704] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.233870] (-) TimerEvent: {}
+[5.235083] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.235840] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.236041] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.236197] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_fastrtps_c.h\n'}
+[5.236374] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_fastrtps_c.h\n'}
+[5.239285] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_fastrtps_c.h\n'}
+[5.240140] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_c.h\n'}
+[5.240326] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_fastrtps_c.h\n'}
+[5.240461] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.244057] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.244290] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_fastrtps_c.h\n'}
+[5.244452] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_fastrtps_c.h\n'}
+[5.251039] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.251429] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.251692] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_fastrtps_c.h\n'}
+[5.251935] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_fastrtps_c.h\n'}
+[5.255417] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_fastrtps_c.h\n'}
+[5.257159] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_fastrtps_c.h\n'}
+[5.257441] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.258960] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.259319] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.263344] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/force_sensor.hpp\n'}
+[5.264163] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.272239] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.275368] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__builder.hpp\n'}
+[5.275671] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__traits.hpp\n'}
+[5.275982] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__traits.hpp\n'}
+[5.276280] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.hpp\n'}
+[5.276519] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__builder.hpp\n'}
+[5.283957] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__builder.hpp\n'}
+[5.287806] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.hpp\n'}
+[5.290251] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.hpp\n'}
+[5.294748] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__struct.hpp\n'}
+[5.298866] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__builder.hpp\n'}
+[5.302596] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__struct.hpp\n'}
+[5.304937] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__traits.hpp\n'}
+[5.305300] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__builder.hpp\n'}
+[5.313671] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__struct.hpp\n'}
+[5.314048] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.hpp\n'}
+[5.314340] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__traits.hpp\n'}
+[5.321842] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__struct.hpp\n'}
+[5.323948] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__struct.hpp\n'}
+[5.328863] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.hpp\n'}
+[5.333893] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__traits.hpp\n'}
+[5.334233] (-) TimerEvent: {}
+[5.341336] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_position.hpp\n'}
+[5.341860] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_args.hpp\n'}
+[5.342119] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/attitude.hpp\n'}
+[5.350115] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/empty.hpp\n'}
+[5.351872] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.352045] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_position.hpp\n'}
+[5.356705] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.359091] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__traits.hpp\n'}
+[5.361357] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__builder.hpp\n'}
+[5.363309] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.hpp\n'}
+[5.367200] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__traits.hpp\n'}
+[5.367387] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__struct.hpp\n'}
+[5.367505] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__builder.hpp\n'}
+[5.371385] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__struct.hpp\n'}
+[5.371587] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.hpp\n'}
+[5.371707] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_args.hpp\n'}
+[5.371860] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.374774] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg_args.hpp\n'}
+[5.377235] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.379392] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__struct.hpp\n'}
+[5.380765] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__builder.hpp\n'}
+[5.380930] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.hpp\n'}
+[5.381045] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__traits.hpp\n'}
+[5.381184] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__builder.hpp\n'}
+[5.381325] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__struct.hpp\n'}
+[5.381437] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__struct.hpp\n'}
+[5.382537] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__traits.hpp\n'}
+[5.383734] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.hpp\n'}
+[5.384688] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.hpp\n'}
+[5.384880] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__builder.hpp\n'}
+[5.385021] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__struct.hpp\n'}
+[5.385166] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__builder.hpp\n'}
+[5.385346] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.hpp\n'}
+[5.385471] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__traits.hpp\n'}
+[5.389810] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__traits.hpp\n'}
+[5.394320] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/gait.hpp\n'}
+[5.395048] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg.hpp\n'}
+[5.397759] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/empty.hpp\n'}
+[5.397910] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.398012] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.398107] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.398246] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.398365] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.398474] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.403005] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.405756] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.407731] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/dds_fastrtps\n'}
+[5.407928] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.408027] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.408157] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.408289] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.408400] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.409981] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/dds_fastrtps\n'}
+[5.411914] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.412093] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.412244] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.412368] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/dds_fastrtps\n'}
+[5.412473] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.412576] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.412703] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.412807] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.412893] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.412980] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.413064] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.417784] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.417996] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.c\n'}
+[5.418115] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_introspection_c.h\n'}
+[5.418280] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.c\n'}
+[5.418493] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.c\n'}
+[5.419053] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.c\n'}
+[5.419276] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_introspection_c.h\n'}
+[5.419424] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.c\n'}
+[5.420804] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_introspection_c.h\n'}
+[5.420989] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_introspection_c.h\n'}
+[5.421122] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_introspection_c.h\n'}
+[5.423368] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.423523] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.423661] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.c\n'}
+[5.424732] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_introspection_c.h\n'}
+[5.424904] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_introspection_c.h\n'}
+[5.428188] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.c\n'}
+[5.428526] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.429698] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.429892] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_introspection_c.h\n'}
+[5.430012] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_introspection_c.h\n'}
+[5.430773] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.c\n'}
+[5.431027] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.c\n'}
+[5.431202] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.c\n'}
+[5.431371] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_introspection_c.h\n'}
+[5.431515] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.c\n'}
+[5.431647] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_introspection_c.h\n'}
+[5.431778] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.431909] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_c.so\n'}
+[5.432014] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs\n'}
+[5.432150] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg\n'}
+[5.432293] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail\n'}
+[5.432405] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.432514] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.cpp\n'}
+[5.436994] (-) TimerEvent: {}
+[5.437184] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.cpp\n'}
+[5.437382] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.cpp\n'}
+[5.439995] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.440272] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.441036] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.cpp\n'}
+[5.441243] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.443302] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.443487] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.cpp\n'}
+[5.443619] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv\n'}
+[5.443730] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail\n'}
+[5.443830] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.cpp\n'}
+[5.443932] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.cpp\n'}
+[5.444026] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.444184] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.444313] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action\n'}
+[5.444455] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail\n'}
+[5.444574] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.444675] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.444782] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.444892] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.cpp\n'}
+[5.445016] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.cpp\n'}
+[5.450404] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.451568] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.cpp\n'}
+[5.452196] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.cpp\n'}
+[5.452494] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.456780] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_cpp.so\n'}
+[5.462394] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/pythonpath.sh\n'}
+[5.464550] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/pythonpath.dsv\n'}
+[5.467730] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info\n'}
+[5.468219] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.472530] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.472941] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.476895] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.477236] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs\n'}
+[5.477500] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/__init__.py\n'}
+[5.477758] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.477988] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg\n'}
+[5.485669] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/__init__.py\n'}
+[5.490198] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_attitude_s.c\n'}
+[5.490608] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_force_sensor.py\n'}
+[5.495633] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_args.py\n'}
+[5.496144] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_position.py\n'}
+[5.496455] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_position_s.c\n'}
+[5.499731] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_empty_s.c\n'}
+[5.500036] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_empty.py\n'}
+[5.501644] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_args_s.c\n'}
+[5.502083] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_force_sensor_s.c\n'}
+[5.502379] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_attitude.py\n'}
+[5.504041] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.504394] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv\n'}
+[5.504650] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/__init__.py\n'}
+[5.504932] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_args_s.c\n'}
+[5.510402] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_args.py\n'}
+[5.513338] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_position_s.c\n'}
+[5.516331] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_position.py\n'}
+[5.516832] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so\n'}
+[5.517102] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.530028] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.530422] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.530797] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action\n'}
+[5.531115] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg.py\n'}
+[5.534566] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/__init__.py\n'}
+[5.534911] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_args.py\n'}
+[5.544947] (-) TimerEvent: {}
+[5.546422] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_gait_s.c\n'}
+[5.548292] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_s.c\n'}
+[5.550916] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_empty_s.c\n'}
+[5.557561] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_args_s.c\n'}
+[5.557905] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_empty.py\n'}
+[5.558245] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_gait.py\n'}
+[5.647162] (-) TimerEvent: {}
+[5.748476] (-) TimerEvent: {}
+[5.767903] (hapthexa_msgs) StdoutLine: {'line': b"Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs'...\n"}
+[5.768907] (hapthexa_msgs) StdoutLine: {'line': b"Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action'...\n"}
+[5.769091] (hapthexa_msgs) StdoutLine: {'line': b"Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg'...\n"}
+[5.769274] (hapthexa_msgs) StdoutLine: {'line': b"Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv'...\n"}
+[5.806071] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.806487] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.810061] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so\n'}
+[5.816057] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_py.so\n'}
+[5.819013] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.idl\n'}
+[5.819384] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.idl\n'}
+[5.821569] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.idl\n'}
+[5.821892] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.idl\n'}
+[5.823617] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.idl\n'}
+[5.825947] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.idl\n'}
+[5.826101] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.idl\n'}
+[5.826298] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.idl\n'}
+[5.826431] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.idl\n'}
+[5.826559] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.idl\n'}
+[5.826669] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.idl\n'}
+[5.826778] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.action\n'}
+[5.826876] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.action\n'}
+[5.826981] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.action\n'}
+[5.827097] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.action\n'}
+[5.831825] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.msg\n'}
+[5.831996] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.msg\n'}
+[5.833148] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.msg\n'}
+[5.835793] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.msg\n'}
+[5.837025] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.msg\n'}
+[5.837218] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.srv\n'}
+[5.837357] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.srv\n'}
+[5.838789] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/package_run_dependencies/hapthexa_msgs\n'}
+[5.839431] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/parent_prefix_path/hapthexa_msgs\n'}
+[5.842644] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/ament_prefix_path.sh\n'}
+[5.843933] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/ament_prefix_path.dsv\n'}
+[5.844106] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/path.sh\n'}
+[5.845699] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/path.dsv\n'}
+[5.845943] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.bash\n'}
+[5.846080] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.sh\n'}
+[5.846239] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.zsh\n'}
+[5.846350] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.dsv\n'}
+[5.847228] (hapthexa_msgs) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.dsv\n'}
+[5.847485] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/packages/hapthexa_msgs\n'}
+[5.847613] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cExport.cmake\n'}
+[5.847727] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.847829] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.847931] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.848037] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.848170] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.848307] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.848420] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.848556] (-) TimerEvent: {}
+[5.853247] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.853837] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.854046] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.854230] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.854379] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.854528] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.854646] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.854753] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.854869] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.854972] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.855069] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.856897] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.857099] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.857267] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.857386] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.858587] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.858792] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgsConfig.cmake\n'}
+[5.858937] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgsConfig-version.cmake\n'}
+[5.859055] (hapthexa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.xml\n'}
+[5.863907] (hapthexa_msgs) CommandEnded: {'returncode': 0}
+[5.952982] (-) TimerEvent: {}
+[6.056176] (-) TimerEvent: {}
+[6.161690] (-) TimerEvent: {}
+[6.262871] (-) TimerEvent: {}
+[6.365910] (-) TimerEvent: {}
+[6.468341] (-) TimerEvent: {}
+[6.568786] (-) TimerEvent: {}
+[6.669605] (-) TimerEvent: {}
+[6.771548] (-) TimerEvent: {}
+[6.873001] (-) TimerEvent: {}
+[6.974270] (-) TimerEvent: {}
+[7.078285] (-) TimerEvent: {}
+[7.179910] (-) TimerEvent: {}
+[7.281857] (-) TimerEvent: {}
+[7.382586] (-) TimerEvent: {}
+[7.446628] (hapthexa_msgs) JobEnded: {'identifier': 'hapthexa_msgs', 'rc': 0}
+[7.449233] (hapthexa_dxl_servo) JobStarted: {'identifier': 'hapthexa_dxl_servo'}
+[7.463931] (hapthexa_main) JobStarted: {'identifier': 'hapthexa_main'}
+[7.485217] (-) TimerEvent: {}
+[7.498278] (hapthexa_dxl_servo) JobProgress: {'identifier': 'hapthexa_dxl_servo', 'progress': 'cmake'}
+[7.514782] (hapthexa_dxl_servo) JobProgress: {'identifier': 'hapthexa_dxl_servo', 'progress': 'build'}
+[7.514949] (hapthexa_dxl_servo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cao/ros2ws/build/hapthexa_dxl_servo', '--', '-j4', '-l4'], 'cwd': '/home/cao/ros2ws/build/hapthexa_dxl_servo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_dxl_servo', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.573674] (hapthexa_main) JobProgress: {'identifier': 'hapthexa_main', 'progress': 'cmake'}
+[7.591652] (hapthexa_main) JobProgress: {'identifier': 'hapthexa_main', 'progress': 'build'}
+[7.591820] (-) TimerEvent: {}
+[7.596994] (hapthexa_main) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cao/ros2ws/build/hapthexa_main', '--', '-j4', '-l4'], 'cwd': '/home/cao/ros2ws/build/hapthexa_main', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_main', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.692176] (-) TimerEvent: {}
+[7.794809] (-) TimerEvent: {}
+[7.896277] (-) TimerEvent: {}
+[7.911141] (hapthexa_main) StdoutLine: {'line': b'[100%] Built target hapthexa_leg\n'}
+[7.928062] (hapthexa_dxl_servo) StdoutLine: {'line': b'[ 71%] Built target dynamixel_workbench\n'}
+[7.999394] (-) TimerEvent: {}
+[8.026101] (hapthexa_main) CommandEnded: {'returncode': 0}
+[8.103164] (-) TimerEvent: {}
+[8.128301] (hapthexa_main) JobProgress: {'identifier': 'hapthexa_main', 'progress': 'install'}
+[8.128499] (hapthexa_main) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cao/ros2ws/build/hapthexa_main'], 'cwd': '/home/cao/ros2ws/build/hapthexa_main', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_main', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.140053] (hapthexa_dxl_servo) StdoutLine: {'line': b'[100%] Built target hapthexa_servo\n'}
+[8.206635] (-) TimerEvent: {}
+[8.246515] (hapthexa_main) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.247634] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg\n'}
+[8.249600] (hapthexa_dxl_servo) CommandEnded: {'returncode': 0}
+[8.252466] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/__init__.py\n'}
+[8.253059] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/attitude_controller.py\n'}
+[8.253249] (hapthexa_main) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py\n'}
+[8.255555] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py\n'}
+[8.257030] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py\n'}
+[8.257260] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py\n'}
+[8.259106] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py\n'}
+[8.259312] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py\n'}
+[8.265044] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simple_walk.py\n'}
+[8.265371] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simplewalk_action.py\n'}
+[8.265524] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_roughwalk_action.py\n'}
+[8.265658] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_simplewalk_flonly.py\n'}
+[8.267859] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/wakeup_by_action.py\n'}
+[8.268205] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch.py\n'}
+[8.268360] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch2.py\n'}
+[8.268469] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/package_run_dependencies/hapthexa_main\n'}
+[8.268584] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/parent_prefix_path/hapthexa_main\n'}
+[8.268687] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.sh\n'}
+[8.268796] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.dsv\n'}
+[8.268903] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.sh\n'}
+[8.269008] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.dsv\n'}
+[8.269122] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.bash\n'}
+[8.274111] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.sh\n'}
+[8.274281] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.zsh\n'}
+[8.275797] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.dsv\n'}
+[8.277676] (hapthexa_main) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv\n'}
+[8.277851] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/packages/hapthexa_main\n'}
+[8.277971] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig.cmake\n'}
+[8.278688] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig-version.cmake\n'}
+[8.287743] (hapthexa_main) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.xml\n'}
+[8.289712] (hapthexa_main) CommandEnded: {'returncode': 0}
+[8.309097] (-) TimerEvent: {}
+[8.414322] (-) TimerEvent: {}
+[8.454517] (hapthexa_dxl_servo) JobProgress: {'identifier': 'hapthexa_dxl_servo', 'progress': 'install'}
+[8.454651] (hapthexa_dxl_servo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cao/ros2ws/build/hapthexa_dxl_servo'], 'cwd': '/home/cao/ros2ws/build/hapthexa_dxl_servo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cao', 'SSH_CLIENT': '192.168.11.6 59006 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'HOME': '/home/cao', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-4a7e6e6a-b935-47e1-a845-483e4b0ffd5e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/cao/ros2ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'cao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/cao/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-30090fddfb.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cao/ros2ws/build/hapthexa_dxl_servo', 'SSH_CONNECTION': '192.168.11.6 59006 192.168.11.61 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.491577] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.491866] (hapthexa_main) JobEnded: {'identifier': 'hapthexa_main', 'rc': 0}
+[8.495465] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/hapthexa_servo\n'}
+[8.495725] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor.py\n'}
+[8.495864] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor_calibrate.py\n'}
+[8.495987] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/forcesensor_read.py\n'}
+[8.496117] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/launch.py\n'}
+[8.496266] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config\n'}
+[8.496394] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_left.yaml\n'}
+[8.496519] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_left.yaml\n'}
+[8.496638] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_right.yaml\n'}
+[8.496767] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_right.yaml\n'}
+[8.496896] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_right.yaml\n'}
+[8.497013] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_left.yaml\n'}
+[8.500888] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/package_run_dependencies/hapthexa_dxl_servo\n'}
+[8.504277] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/parent_prefix_path/hapthexa_dxl_servo\n'}
+[8.504425] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.sh\n'}
+[8.504560] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.dsv\n'}
+[8.504656] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.sh\n'}
+[8.504755] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.dsv\n'}
+[8.504872] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.bash\n'}
+[8.504993] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.sh\n'}
+[8.505102] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.zsh\n'}
+[8.505243] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.dsv\n'}
+[8.505371] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.dsv\n'}
+[8.505513] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/packages/hapthexa_dxl_servo\n'}
+[8.505655] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig.cmake\n'}
+[8.505790] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig-version.cmake\n'}
+[8.505915] (hapthexa_dxl_servo) StdoutLine: {'line': b'-- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.xml\n'}
+[8.514656] (hapthexa_dxl_servo) CommandEnded: {'returncode': 0}
+[8.515103] (-) TimerEvent: {}
+[8.615386] (-) TimerEvent: {}
+[8.716358] (-) TimerEvent: {}
+[8.748092] (hapthexa_dxl_servo) JobEnded: {'identifier': 'hapthexa_dxl_servo', 'rc': 0}
+[8.759405] (-) EventReactorShutdown: {}

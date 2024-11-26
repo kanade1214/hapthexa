@@ -1,0 +1,65 @@
+[0.053s] Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[0.370s] [ 71%] Built target dynamixel_workbench
+[0.515s] [ 85%] [32mBuilding CXX object CMakeFiles/hapthexa_servo.dir/src/hapthexa_servo.cpp.o[0m
+[12.599s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.599s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[12.599s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[12.599s]                  from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:2[m[K:
+[12.600s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:[m[K In constructor ‘[01m[KHaptHexaServo::[01;32m[KHaptHexaServo[m[K()[m[K’:
+[12.600s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:105:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kfloat*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.600s]   105 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"\n%d:%f"[m[K,id,[32m[Ka[m[K);
+[12.601s]       |                                             [01;35m[K^~~~~~~~~[m[K    [32m[K~[m[K
+[12.605s]       |                                                          [32m[K|[m[K
+[12.606s]       |                                                          [32m[Kfloat*[m[K
+[12.606s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:105:52:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.606s]   105 |             RCLCPP_INFO(this->get_logger(), "\n%d:[01;36m[K%f[m[K",id,a);
+[12.607s]       |                                                   [01;36m[K~^[m[K
+[12.607s]       |                                                    [01;36m[K|[m[K
+[12.607s]       |                                                    [01;36m[Kdouble[m[K
+[12.607s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:109:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kfloat*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.616s]   109 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"\n%d:set%f"[m[K,id,[32m[Ka[m[K);
+[12.617s]       |                                             [01;35m[K^~~~~~~~~~~~[m[K    [32m[K~[m[K
+[12.617s]       |                                                             [32m[K|[m[K
+[12.617s]       |                                                             [32m[Kfloat*[m[K
+[12.617s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:109:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.618s]   109 |             RCLCPP_INFO(this->get_logger(), "\n%d:set[01;36m[K%f[m[K",id,a);
+[12.618s]       |                                                      [01;36m[K~^[m[K
+[12.623s]       |                                                       [01;36m[K|[m[K
+[12.623s]       |                                                       [01;36m[Kdouble[m[K
+[12.658s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:25:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kresult[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[12.658s]    25 |         bool [01;35m[Kresult[m[K = false;
+[12.659s]       |              [01;35m[K^~~~~~[m[K
+[41.293s] [100%] [32m[1mLinking CXX executable hapthexa_servo[0m
+[43.416s] [100%] Built target hapthexa_servo
+[43.457s] Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[43.576s] Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo
+[43.609s] -- Install configuration: ""
+[43.611s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/hapthexa_servo
+[43.664s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/hapthexa_servo" to ""
+[43.665s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor.py
+[43.665s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor_calibrate.py
+[43.666s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/forcesensor_read.py
+[43.667s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/launch.py
+[43.667s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config
+[43.668s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_left.yaml
+[43.668s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_left.yaml
+[43.669s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_right.yaml
+[43.669s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_right.yaml
+[43.670s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_right.yaml
+[43.671s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_left.yaml
+[43.671s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/package_run_dependencies/hapthexa_dxl_servo
+[43.672s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/parent_prefix_path/hapthexa_dxl_servo
+[43.673s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.sh
+[43.674s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.dsv
+[43.674s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.sh
+[43.674s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.dsv
+[43.676s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.bash
+[43.676s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.sh
+[43.676s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.zsh
+[43.677s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.dsv
+[43.677s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.dsv
+[43.679s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/packages/hapthexa_dxl_servo
+[43.679s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig.cmake
+[43.679s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig-version.cmake
+[43.679s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.xml
+[43.688s] Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo

@@ -1,0 +1,607 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (5.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/cao/ros2ws/build/hapthexa_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_hapthexa_msgs
+running egg_info
+creating hapthexa_msgs.egg-info
+writing hapthexa_msgs.egg-info/PKG-INFO
+writing dependency_links to hapthexa_msgs.egg-info/dependency_links.txt
+writing top-level names to hapthexa_msgs.egg-info/top_level.txt
+writing manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+reading manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+writing manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_hapthexa_msgs_egg
+[  1%] Built target hapthexa_msgs__rosidl_generator_type_description
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target hapthexa_msgs__cpp
+[  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__description.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__description.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__type_support.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__description.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__type_support.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__type_support.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__description.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__type_support.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__description.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__type_support.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__description.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__type_support.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__description.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__description.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__type_support.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__description.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__functions.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__type_support.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__description.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__functions.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__type_support.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__description.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__functions.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__type_support.c.o[0m
+[ 27%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_generator_c.so[0m
+[ 27%] Built target hapthexa_msgs__rosidl_generator_c
+[ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/move_leg__type_support.cpp.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/move_leg__type_support.c.o[0m
+[ 32%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/move_leg_args__type_support.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/gait__type_support.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/empty__type_support.c.o[0m
+[ 34%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/attitude__type_support.c.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/empty__type_support.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/force_sensor__type_support.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/leg_args__type_support.c.o[0m
+[ 37%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/leg_position__type_support.c.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/move_leg__type_support.cpp.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/srv/detail/get_leg_args__type_support.c.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/move_leg_args__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/srv/detail/get_leg_position__type_support.c.o[0m
+[ 40%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/move_leg__type_support_c.cpp.o[0m
+[ 41%] Built target hapthexa_msgs__rosidl_typesupport_introspection_c
+[ 41%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/move_leg_args__type_support_c.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/gait__type_support_c.cpp.o[0m
+[ 43%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/gait__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/move_leg_args__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/move_leg__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/empty__type_support_c.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/move_leg_args__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/gait__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/empty__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/empty__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/attitude__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/empty__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/force_sensor__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/leg_args__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/leg_position__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/srv/get_leg_args__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/srv/get_leg_position__type_support.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_c.so[0m
+[ 55%] Built target hapthexa_msgs__rosidl_typesupport_c
+[ 56%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/attitude__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/attitude__type_support_c.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/empty__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/gait__type_support.cpp.o[0m
+[ 60%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/empty__type_support_c.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/force_sensor__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/leg_args__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/force_sensor__type_support_c.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/move_leg__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/leg_position__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/empty__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/leg_args__type_support_c.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/srv/get_leg_args__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/srv/get_leg_position__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/move_leg_args__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/leg_position__type_support_c.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_cpp.so[0m
+[ 70%] Built target hapthexa_msgs__rosidl_typesupport_cpp
+[ 70%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/gait__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/srv/detail/get_leg_args__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/attitude__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/empty__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/srv/detail/get_leg_position__type_support_c.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/empty__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/attitude__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/force_sensor__type_support.cpp.o[0m
+[ 76%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/empty__type_support.cpp.o[0m
+[ 77%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_c
+[ 78%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/leg_args__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/force_sensor__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/leg_args__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/leg_position__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/leg_position__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/srv/detail/dds_fastrtps/get_leg_args__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/srv/detail/get_leg_args__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/srv/detail/get_leg_position__type_support.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/srv/detail/dds_fastrtps/get_leg_position__type_support.cpp.o[0m
+[ 84%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 84%] Built target hapthexa_msgs__rosidl_typesupport_introspection_cpp
+[ 85%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 85%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_cpp
+[ 85%] Built target hapthexa_msgs
+[ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 86%] Built target hapthexa_msgs__py
+[ 89%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_move_leg_args_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_move_leg_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_gait_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_empty_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_attitude_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_empty_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_force_sensor_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_leg_args_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_leg_position_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/srv/_get_leg_args_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/srv/_get_leg_position_s.c.o[0m
+[ 95%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_generator_py.so[0m
+[ 95%] Built target hapthexa_msgs__rosidl_generator_py
+[ 95%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 99%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[ 99%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] Built target hapthexa_msgs_s__rosidl_typesupport_introspection_c
+[100%] Built target hapthexa_msgs_s__rosidl_typesupport_c
+[100%] Built target hapthexa_msgs_s__rosidl_typesupport_fastrtps_c
+-- Install configuration: ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/rosidl_interfaces/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.json
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/attitude.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/empty.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_position.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_args.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/force_sensor.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_position.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_args.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg_args.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/empty.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/gait.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__functions.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__struct.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__description.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__functions.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/library_path.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/library_path.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/force_sensor.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_position.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/leg_args.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/attitude.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/empty.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_position.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/get_leg_args.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg_args.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__struct.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__builder.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__traits.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/gait.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/move_leg.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/empty.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/dds_fastrtps
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/dds_fastrtps
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/dds_fastrtps
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.c
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_introspection_c.h
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/attitude__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_position__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/force_sensor__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/leg_args__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/msg/detail/empty__type_support.cpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_position__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/srv/detail/get_leg_args__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg_args__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/move_leg__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/gait__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/include/hapthexa_msgs/hapthexa_msgs/action/detail/empty__type_support.cpp
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/pythonpath.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/pythonpath.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/__init__.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/__init__.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_attitude_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_force_sensor.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_args.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_position.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_position_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_empty_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_empty.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_args_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_force_sensor_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_attitude.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/__init__.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_args_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_args.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_position_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_position.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/__init__.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_args.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_gait_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_empty_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_args_s.c
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_empty.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_gait.py
+Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/__init__.py'...
+Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/__init__.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_empty.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_gait.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/action/_move_leg_args.py'...
+Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/__init__.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_attitude.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_empty.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_force_sensor.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_args.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/msg/_leg_position.py'...
+Listing '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/__init__.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_args.py'...
+Compiling '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/srv/_get_leg_position.py'...
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_msgs/lib/libhapthexa_msgs__rosidl_generator_py.so" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.idl
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLeg.action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/MoveLegArgs.action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Gait.action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/action/Empty.action
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Attitude.msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/Empty.msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/ForceSensor.msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegArgs.msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/msg/LegPosition.msg
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegArgs.srv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/srv/GetLegPosition.srv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/package_run_dependencies/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/parent_prefix_path/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/ament_prefix_path.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/ament_prefix_path.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/path.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/environment/path.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.bash
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.zsh
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/local_setup.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/ament_index/resource_index/packages/hapthexa_msgs
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/export_hapthexa_msgs__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgsConfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake/hapthexa_msgsConfig-version.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.xml

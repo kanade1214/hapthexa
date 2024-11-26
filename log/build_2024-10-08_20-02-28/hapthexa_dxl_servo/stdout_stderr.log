@@ -1,0 +1,4 @@
+[ 71%] Built target dynamixel_workbench
+gmake[2]: *** No rule to make target '/usr/local/lib/libdxl_sbc_cpp.so', needed by 'hapthexa_servo'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/hapthexa_servo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

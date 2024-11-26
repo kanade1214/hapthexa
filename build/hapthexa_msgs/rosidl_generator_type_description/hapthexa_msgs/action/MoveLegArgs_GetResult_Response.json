@@ -1,0 +1,76 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "hapthexa_msgs/action/MoveLegArgs_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "hapthexa_msgs/action/MoveLegArgs_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "hapthexa_msgs/action/MoveLegArgs_Result",
+        "fields": [
+          {
+            "name": "coxa_arg",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "femur_arg",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "tibia_arg",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "hapthexa_msgs/action/MoveLegArgs_GetResult_Response",
+      "hash_string": "RIHS01_685bbec30a842a4cf2bbe7d63f793a2341fb7806b0c262dc10da925b6ac96e81"
+    },
+    {
+      "type_name": "hapthexa_msgs/action/MoveLegArgs_Result",
+      "hash_string": "RIHS01_4b34fb0045176ff353f1c0e39a9fb3adc63a7b6494db8bc0d529f0bd6a1e30c4"
+    }
+  ]
+}

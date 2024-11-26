@@ -1,0 +1,14 @@
+[ 71%] Built target dynamixel_workbench
+[ 85%] [32mBuilding CXX object CMakeFiles/hapthexa_servo.dir/src/hapthexa_servo.cpp.o[0m
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:[m[K In constructor ‘[01m[KHaptHexaServo::[01;32m[KHaptHexaServo[m[K()[m[K’:
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:68:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDynamixelWorkbench::setCurrentBasedPositionControlMode(int&, int, const char**)[m[K’
+   68 |                 if (dxl_wb.jointMode(id, 0, 0, &log) && [01;31m[Kdxl_wb.setCurrentBasedPositionControlMode(id,2,&log)[m[K) {
+      |                                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:3[m[K:
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/include/dynamixel_workbench_toolbox/dynamixel_workbench.h:59:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool DynamixelWorkbench::[01;32m[KsetCurrentBasedPositionControlMode[m[K(uint8_t, const char**)[m[K’
+   59 |   bool [01;36m[KsetCurrentBasedPositionControlMode[m[K(uint8_t id, const char **log = NULL);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/include/dynamixel_workbench_toolbox/dynamixel_workbench.h:59:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/hapthexa_servo.dir/build.make:76: CMakeFiles/hapthexa_servo.dir/src/hapthexa_servo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/hapthexa_servo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

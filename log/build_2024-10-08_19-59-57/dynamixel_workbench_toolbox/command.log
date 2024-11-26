@@ -1,0 +1,1 @@
+Invoking command in '/home/cao/ros2ws/build/dynamixel_workbench_toolbox': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cao/ros2ws/src/dynamixel-workbench/dynamixel_workbench_toolbox -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/dynamixel_workbench_toolbox

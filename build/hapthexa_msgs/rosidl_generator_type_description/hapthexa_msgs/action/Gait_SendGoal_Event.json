@@ -1,0 +1,291 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "hapthexa_msgs/action/Gait_SendGoal_Event",
+      "fields": [
+        {
+          "name": "info",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "request",
+          "type": {
+            "type_id": 97,
+            "capacity": 1,
+            "string_capacity": 0,
+            "nested_type_name": "hapthexa_msgs/action/Gait_SendGoal_Request"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "response",
+          "type": {
+            "type_id": 97,
+            "capacity": 1,
+            "string_capacity": 0,
+            "nested_type_name": "hapthexa_msgs/action/Gait_SendGoal_Response"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "hapthexa_msgs/action/Gait_Goal",
+        "fields": [
+          {
+            "name": "w",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "h",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "hmax",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "hmin",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z_offset",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "is_swingleg",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "is_firsttime",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "phase",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "hapthexa_msgs/action/Gait_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "hapthexa_msgs/action/Gait_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "hapthexa_msgs/action/Gait_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "hapthexa_msgs/action/Gait_SendGoal_Event",
+      "hash_string": "RIHS01_efc4d729fff954612f7a3be6ad7aa1262f5e482182099c95929d5c23374b0f9f"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "hapthexa_msgs/action/Gait_Goal",
+      "hash_string": "RIHS01_9c4dfeb42a1675e73260cffc122b47686dbac71ecd4ed5f6982339c963e82729"
+    },
+    {
+      "type_name": "hapthexa_msgs/action/Gait_SendGoal_Request",
+      "hash_string": "RIHS01_058a0e36bed87fe39efd30a28a1e7f978fdb60b670bf65c789733dc501272cb4"
+    },
+    {
+      "type_name": "hapthexa_msgs/action/Gait_SendGoal_Response",
+      "hash_string": "RIHS01_c86267e00995544c75b9613355fecf3c04cbded9805442157cad11144ca88a8d"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

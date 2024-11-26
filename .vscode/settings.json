@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "complex": "cpp",
+        "bitset": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "optional": "cpp",
+        "cmath": "cpp",
+        "thread": "cpp",
+        "chrono": "cpp"
+    }
+}

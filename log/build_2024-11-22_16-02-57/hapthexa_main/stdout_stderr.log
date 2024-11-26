@@ -1,0 +1,74 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:2[m[K:
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In member function ‘[01m[Kvoid HaptHexaLeg::[01;32m[Kspin[m[K()[m[K’:
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  149 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"%d %d %d"[m[K,[32m[Kmove_leg_goal_xyz_(0)[m[K,move_leg_goal_xyz_(1), move_leg_goal_xyz_(2));
+      |                                             [01;35m[K^~~~~~~~~~[m[K [32m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                          [32m[K|[m[K
+      |                                                                          [32m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar {aka double}[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  149 |             RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K %d %d",move_leg_goal_xyz_(0),move_leg_goal_xyz_(1), move_leg_goal_xyz_(2));
+      |                                              [01;36m[K~^[m[K
+      |                                               [01;36m[K|[m[K
+      |                                               [01;36m[Kint[m[K
+      |                                              [32m[K%f[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  149 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"%d %d %d"[m[K,move_leg_goal_xyz_(0),[32m[Kmove_leg_goal_xyz_(1)[m[K, move_leg_goal_xyz_(2));
+      |                                             [01;35m[K^~~~~~~~~~[m[K                       [32m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                [32m[K|[m[K
+      |                                                                                                [32m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar {aka double}[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  149 |             RCLCPP_INFO(this->get_logger(), "%d [01;36m[K%d[m[K %d",move_leg_goal_xyz_(0),move_leg_goal_xyz_(1), move_leg_goal_xyz_(2));
+      |                                                 [01;36m[K~^[m[K
+      |                                                  [01;36m[K|[m[K
+      |                                                  [01;36m[Kint[m[K
+      |                                                 [32m[K%f[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  149 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"%d %d %d"[m[K,move_leg_goal_xyz_(0),move_leg_goal_xyz_(1), [32m[Kmove_leg_goal_xyz_(2)[m[K);
+      |                                             [01;35m[K^~~~~~~~~~[m[K                                              [32m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                       [32m[K|[m[K
+      |                                                                                                                       [32m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar {aka double}[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:149:53:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  149 |             RCLCPP_INFO(this->get_logger(), "%d %d [01;36m[K%d[m[K",move_leg_goal_xyz_(0),move_leg_goal_xyz_(1), move_leg_goal_xyz_(2));
+      |                                                    [01;36m[K~^[m[K
+      |                                                     [01;36m[K|[m[K
+      |                                                     [01;36m[Kint[m[K
+      |                                                    [32m[K%f[m[K
+[100%] [32m[1mLinking CXX executable hapthexa_leg[0m
+[100%] Built target hapthexa_leg
+-- Install configuration: ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg" to ""
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/__init__.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/attitude_controller.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simple_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simplewalk_action.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_roughwalk_action.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_simplewalk_flonly.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/wakeup_by_action.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch2.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/package_run_dependencies/hapthexa_main
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/parent_prefix_path/hapthexa_main
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.sh
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.sh
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.dsv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.bash
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.sh
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.zsh
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/packages/hapthexa_main
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig.cmake
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig-version.cmake
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.xml

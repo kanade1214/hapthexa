@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o[0m
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In member function ‘[01m[Kvoid HaptHexaLeg::[01;32m[Kspin[m[K()[m[K’:
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:284:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+  284 |                     publish_args_by_position([01;31m[Kgoal_handle[m[K->get_goal()->x, goal_handle->get_goal()->y, goal_handle->get_goal()->z);
+      |                                              [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hapthexa_leg.dir/build.make:76: CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hapthexa_leg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

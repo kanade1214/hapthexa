@@ -1,0 +1,8 @@
+source;share/hapthexa_main/hook/cmake_prefix_path.ps1
+source;share/hapthexa_main/hook/cmake_prefix_path.dsv
+source;share/hapthexa_main/hook/cmake_prefix_path.sh
+source;share/hapthexa_main/local_setup.bash
+source;share/hapthexa_main/local_setup.dsv
+source;share/hapthexa_main/local_setup.ps1
+source;share/hapthexa_main/local_setup.sh
+source;share/hapthexa_main/local_setup.zsh

@@ -1,0 +1,16 @@
+In file included from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_driver.cpp:19[m[K:
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/../include/dynamixel_workbench_toolbox/dynamixel_driver.h:29:12:[m[K [01;31m[Kfatal error: [m[Kdynamixel_sdk/dynamixel_sdk.h: No such file or directory
+   29 |   #include [01;31m[K"dynamixel_sdk/dynamixel_sdk.h"[m[K
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/dynamixel_workbench.dir/build.make:90: CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/../include/dynamixel_workbench_toolbox/dynamixel_workbench.h:22[m[K,
+                 from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_workbench.cpp:19[m[K:
+[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/../include/dynamixel_workbench_toolbox/dynamixel_driver.h:29:12:[m[K [01;31m[Kfatal error: [m[Kdynamixel_sdk/dynamixel_sdk.h: No such file or directory
+   29 |   #include [01;31m[K"dynamixel_sdk/dynamixel_sdk.h"[m[K
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/dynamixel_workbench.dir/build.make:118: CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamixel_workbench.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

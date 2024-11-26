@@ -1,0 +1,40 @@
+[0.020s] Invoking command in '/home/cao/ros2ws/build/dynamixel_sdk': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cao/ros2ws/src/DynamixelSDK/ros/dynamixel_sdk -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/dynamixel_sdk
+[0.037s] [0mCMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+[0.037s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.037s]   CMake.
+[0.037s] 
+[0.037s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.038s]   CMake that the project does not need compatibility with older versions.
+[0.038s] 
+[0.038s] [0m
+[0.174s] -- The C compiler identification is GNU 13.2.0
+[0.393s] -- The CXX compiler identification is GNU 13.2.0
+[0.453s] -- Detecting C compiler ABI info
+[0.668s] -- Detecting C compiler ABI info - done
+[0.717s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.718s] -- Detecting C compile features
+[0.718s] -- Detecting C compile features - done
+[0.737s] -- Detecting CXX compiler ABI info
+[0.950s] -- Detecting CXX compiler ABI info - done
+[0.968s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.968s] -- Detecting CXX compile features
+[0.969s] -- Detecting CXX compile features - done
+[0.980s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[0.980s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.980s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.980s]   CMake did not find one.
+[0.980s] 
+[0.980s]   Could not find a package configuration file provided by "catkin" with any
+[0.981s]   of the following names:
+[0.981s] 
+[0.981s]     catkinConfig.cmake
+[0.981s]     catkin-config.cmake
+[0.981s] 
+[0.981s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.981s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.981s]   provides a separate development package or SDK, be sure it has been
+[0.981s]   installed.
+[0.982s] 
+[0.982s] [0m
+[0.982s] -- Configuring incomplete, errors occurred!
+[0.988s] Invoked command in '/home/cao/ros2ws/build/dynamixel_sdk' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cao/ros2ws/src/DynamixelSDK/ros/dynamixel_sdk -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/dynamixel_sdk
