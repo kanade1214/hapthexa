@@ -11,10 +11,10 @@ hapthexa_msgs__action__MoveLeg__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x4e, 0xe0, 0xc2, 0xe2, 0x9c, 0xa9, 0xac, 0x54,
-      0x0f, 0x96, 0x52, 0x86, 0x53, 0x7e, 0x32, 0xaf,
-      0x5b, 0x16, 0x36, 0xa7, 0x56, 0x13, 0xf6, 0x32,
-      0xff, 0xec, 0x48, 0x28, 0xde, 0xb2, 0x5e, 0xea,
+      0xce, 0xcf, 0xcd, 0xc4, 0xdb, 0x22, 0x7b, 0x2e,
+      0xf4, 0x0e, 0x26, 0xf4, 0x8f, 0x13, 0x60, 0x95,
+      0x5a, 0x17, 0x92, 0xb2, 0x56, 0xd0, 0x19, 0x0b,
+      0xb5, 0x87, 0x00, 0x8d, 0xe9, 0x60, 0x20, 0xd4,
     }};
   return &hash;
 }
@@ -56,10 +56,10 @@ hapthexa_msgs__action__MoveLeg_Feedback__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x18, 0xa6, 0x30, 0x30, 0x87, 0x86, 0x51, 0x1f,
-      0x93, 0x41, 0x5f, 0xf6, 0xbc, 0x79, 0x98, 0x1e,
-      0x36, 0xa6, 0x0b, 0xa2, 0x66, 0xe2, 0xfc, 0xbf,
-      0xef, 0xea, 0x9d, 0x2f, 0xe8, 0x79, 0xc1, 0x60,
+      0x25, 0xdc, 0x5b, 0x43, 0x05, 0x01, 0x88, 0xa9,
+      0x16, 0x37, 0xd1, 0xa2, 0x34, 0x87, 0x39, 0x5f,
+      0x09, 0xb2, 0x7e, 0xf8, 0xa9, 0x54, 0x20, 0xe5,
+      0x4f, 0x17, 0x4f, 0xd0, 0xba, 0x88, 0xaa, 0xcf,
     }};
   return &hash;
 }
@@ -191,10 +191,10 @@ hapthexa_msgs__action__MoveLeg_FeedbackMessage__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x51, 0x8d, 0x59, 0x10, 0x05, 0xca, 0xec, 0xf2,
-      0x5d, 0x4b, 0x0b, 0xf5, 0xc3, 0x3a, 0x12, 0x51,
-      0xc7, 0x2c, 0x2e, 0xa5, 0x5d, 0x10, 0xe4, 0xa0,
-      0x8e, 0xbe, 0x55, 0x9b, 0xe7, 0xdc, 0xfc, 0x52,
+      0x28, 0x73, 0xe8, 0x56, 0x57, 0x9c, 0x62, 0x7c,
+      0xcd, 0x35, 0xa1, 0x47, 0xbc, 0x55, 0x65, 0x97,
+      0x35, 0xac, 0x7d, 0x8e, 0x84, 0x63, 0x2f, 0x77,
+      0x25, 0x6b, 0x67, 0x41, 0x18, 0x03, 0xa2, 0x77,
     }};
   return &hash;
 }
@@ -204,8 +204,8 @@ hapthexa_msgs__action__MoveLeg_FeedbackMessage__get_type_hash(
 
 // Include directives for referenced types
 #include "unique_identifier_msgs/msg/detail/uuid__functions.h"
-#include "builtin_interfaces/msg/detail/time__functions.h"
 #include "service_msgs/msg/detail/service_event_info__functions.h"
+#include "builtin_interfaces/msg/detail/time__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG
@@ -551,11 +551,33 @@ hapthexa_msgs__action__MoveLeg_Result__get_type_description(
   return &description;
 }
 // Define type names, field names, and default values
-static char hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__remaining[] = "remaining";
+static char hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__loadcell1[] = "loadcell1";
+static char hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__loadcell2[] = "loadcell2";
+static char hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__piezo[] = "piezo";
 
 static rosidl_runtime_c__type_description__Field hapthexa_msgs__action__MoveLeg_Feedback__FIELDS[] = {
   {
-    {hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__remaining, 9, 9},
+    {hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__loadcell1, 9, 9},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_DOUBLE,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__loadcell2, 9, 9},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_DOUBLE,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {hapthexa_msgs__action__MoveLeg_Feedback__FIELD_NAME__piezo, 5, 5},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_DOUBLE,
       0,
@@ -575,7 +597,7 @@ hapthexa_msgs__action__MoveLeg_Feedback__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {hapthexa_msgs__action__MoveLeg_Feedback__TYPE_NAME, 37, 37},
-      {hapthexa_msgs__action__MoveLeg_Feedback__FIELDS, 1, 1},
+      {hapthexa_msgs__action__MoveLeg_Feedback__FIELDS, 3, 3},
     },
     {NULL, 0, 0},
   };
@@ -1245,7 +1267,9 @@ static char toplevel_type_raw_source[] =
   "float64 y\n"
   "float64 z\n"
   "---\n"
-  "float64 remaining";
+  "float64 loadcell1\n"
+  "float64 loadcell2\n"
+  "float64 piezo";
 
 static char action_encoding[] = "action";
 static char implicit_encoding[] = "implicit";
@@ -1260,7 +1284,7 @@ hapthexa_msgs__action__MoveLeg__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {hapthexa_msgs__action__MoveLeg__TYPE_NAME, 28, 28},
     {action_encoding, 6, 6},
-    {toplevel_type_raw_source, 202, 202},
+    {toplevel_type_raw_source, 234, 234},
   };
   return &source;
 }

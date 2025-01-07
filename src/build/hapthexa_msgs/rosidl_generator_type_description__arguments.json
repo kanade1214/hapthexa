@@ -1,0 +1,23 @@
+{
+  "package_name": "hapthexa_msgs",
+  "output_dir": "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_generator_type_description/hapthexa_msgs",
+  "idl_tuples": [
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:action/MoveLeg.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:action/MoveLegArgs.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:action/Gait.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:action/Empty.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:msg/Attitude.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:msg/Empty.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:msg/ForceSensor.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:msg/LegArgs.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:msg/LegPosition.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:srv/GetLegArgs.idl",
+    "/home/cao/ros2ws/src/build/hapthexa_msgs/rosidl_adapter/hapthexa_msgs:srv/GetLegPosition.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

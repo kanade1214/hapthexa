@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hapthexa_msgs/msg/ForceSensor.msg
+// generated code does not contain a copyright notice
+
+
+module hapthexa_msgs {
+  module msg {
+    struct ForceSensor {
+      double loadcell1;
+
+      double loadcell2;
+
+      double piezo;
+
+      double radial_direction;
+
+      double radial_magnitude;
+
+      int64 loadcell1_raw;
+
+      int64 loadcell2_raw;
+
+      int64 piezo_raw;
+
+      boolean x;
+
+      boolean y;
+
+      boolean z;
+    };
+  };
+};

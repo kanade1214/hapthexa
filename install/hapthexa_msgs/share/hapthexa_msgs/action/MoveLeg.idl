@@ -30,7 +30,11 @@ module hapthexa_msgs {
       double z;
     };
     struct MoveLeg_Feedback {
-      double remaining;
+      double loadcell1;
+
+      double loadcell2;
+
+      double piezo;
     };
   };
 };

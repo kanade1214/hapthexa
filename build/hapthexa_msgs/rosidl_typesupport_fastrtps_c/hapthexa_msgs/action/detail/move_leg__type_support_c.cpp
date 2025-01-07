@@ -920,9 +920,19 @@ bool cdr_serialize_hapthexa_msgs__action__MoveLeg_Feedback(
   const hapthexa_msgs__action__MoveLeg_Feedback * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: remaining
+  // Field name: loadcell1
   {
-    cdr << ros_message->remaining;
+    cdr << ros_message->loadcell1;
+  }
+
+  // Field name: loadcell2
+  {
+    cdr << ros_message->loadcell2;
+  }
+
+  // Field name: piezo
+  {
+    cdr << ros_message->piezo;
   }
 
   return true;
@@ -933,9 +943,19 @@ bool cdr_deserialize_hapthexa_msgs__action__MoveLeg_Feedback(
   eprosima::fastcdr::Cdr & cdr,
   hapthexa_msgs__action__MoveLeg_Feedback * ros_message)
 {
-  // Field name: remaining
+  // Field name: loadcell1
   {
-    cdr >> ros_message->remaining;
+    cdr >> ros_message->loadcell1;
+  }
+
+  // Field name: loadcell2
+  {
+    cdr >> ros_message->loadcell2;
+  }
+
+  // Field name: piezo
+  {
+    cdr >> ros_message->piezo;
   }
 
   return true;
@@ -956,9 +976,23 @@ size_t get_serialized_size_hapthexa_msgs__action__MoveLeg_Feedback(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: remaining
+  // Field name: loadcell1
   {
-    size_t item_size = sizeof(ros_message->remaining);
+    size_t item_size = sizeof(ros_message->loadcell1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: loadcell2
+  {
+    size_t item_size = sizeof(ros_message->loadcell2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: piezo
+  {
+    size_t item_size = sizeof(ros_message->piezo);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -985,7 +1019,23 @@ size_t max_serialized_size_hapthexa_msgs__action__MoveLeg_Feedback(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: remaining
+  // Field name: loadcell1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: loadcell2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: piezo
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
@@ -1002,7 +1052,7 @@ size_t max_serialized_size_hapthexa_msgs__action__MoveLeg_Feedback(
     using DataType = hapthexa_msgs__action__MoveLeg_Feedback;
     is_plain =
       (
-      offsetof(DataType, remaining) +
+      offsetof(DataType, piezo) +
       last_member_size
       ) == ret_val;
   }
@@ -1014,9 +1064,19 @@ bool cdr_serialize_key_hapthexa_msgs__action__MoveLeg_Feedback(
   const hapthexa_msgs__action__MoveLeg_Feedback * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: remaining
+  // Field name: loadcell1
   {
-    cdr << ros_message->remaining;
+    cdr << ros_message->loadcell1;
+  }
+
+  // Field name: loadcell2
+  {
+    cdr << ros_message->loadcell2;
+  }
+
+  // Field name: piezo
+  {
+    cdr << ros_message->piezo;
   }
 
   return true;
@@ -1037,9 +1097,23 @@ size_t get_serialized_size_key_hapthexa_msgs__action__MoveLeg_Feedback(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: remaining
+  // Field name: loadcell1
   {
-    size_t item_size = sizeof(ros_message->remaining);
+    size_t item_size = sizeof(ros_message->loadcell1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: loadcell2
+  {
+    size_t item_size = sizeof(ros_message->loadcell2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: piezo
+  {
+    size_t item_size = sizeof(ros_message->piezo);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1064,7 +1138,23 @@ size_t max_serialized_size_key_hapthexa_msgs__action__MoveLeg_Feedback(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: remaining
+  // Field name: loadcell1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: loadcell2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: piezo
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
@@ -1080,7 +1170,7 @@ size_t max_serialized_size_key_hapthexa_msgs__action__MoveLeg_Feedback(
     using DataType = hapthexa_msgs__action__MoveLeg_Feedback;
     is_plain =
       (
-      offsetof(DataType, remaining) +
+      offsetof(DataType, piezo) +
       last_member_size
       ) == ret_val;
   }

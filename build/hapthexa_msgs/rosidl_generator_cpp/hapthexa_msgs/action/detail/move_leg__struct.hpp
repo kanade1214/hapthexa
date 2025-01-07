@@ -353,7 +353,9 @@ struct MoveLeg_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->remaining = 0.0;
+      this->loadcell1 = 0.0;
+      this->loadcell2 = 0.0;
+      this->piezo = 0.0;
     }
   }
 
@@ -363,20 +365,40 @@ struct MoveLeg_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->remaining = 0.0;
+      this->loadcell1 = 0.0;
+      this->loadcell2 = 0.0;
+      this->piezo = 0.0;
     }
   }
 
   // field types and members
-  using _remaining_type =
+  using _loadcell1_type =
     double;
-  _remaining_type remaining;
+  _loadcell1_type loadcell1;
+  using _loadcell2_type =
+    double;
+  _loadcell2_type loadcell2;
+  using _piezo_type =
+    double;
+  _piezo_type piezo;
 
   // setters for named parameter idiom
-  Type & set__remaining(
+  Type & set__loadcell1(
     const double & _arg)
   {
-    this->remaining = _arg;
+    this->loadcell1 = _arg;
+    return *this;
+  }
+  Type & set__loadcell2(
+    const double & _arg)
+  {
+    this->loadcell2 = _arg;
+    return *this;
+  }
+  Type & set__piezo(
+    const double & _arg)
+  {
+    this->piezo = _arg;
     return *this;
   }
 
@@ -422,7 +444,13 @@ struct MoveLeg_Feedback_
   // comparison operators
   bool operator==(const MoveLeg_Feedback_ & other) const
   {
-    if (this->remaining != other.remaining) {
+    if (this->loadcell1 != other.loadcell1) {
+      return false;
+    }
+    if (this->loadcell2 != other.loadcell2) {
+      return false;
+    }
+    if (this->piezo != other.piezo) {
       return false;
     }
     return true;

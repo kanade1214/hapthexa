@@ -398,9 +398,9 @@ void MoveLeg_Feedback_fini_function(void * message_memory)
   typed_message->~MoveLeg_Feedback();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveLeg_Feedback_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveLeg_Feedback_message_member_array[3] = {
   {
-    "remaining",  // name
+    "loadcell1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -408,7 +408,43 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveLeg_Feedb
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(hapthexa_msgs::action::MoveLeg_Feedback, remaining),  // bytes offset in struct
+    offsetof(hapthexa_msgs::action::MoveLeg_Feedback, loadcell1),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "loadcell2",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(hapthexa_msgs::action::MoveLeg_Feedback, loadcell2),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "piezo",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(hapthexa_msgs::action::MoveLeg_Feedback, piezo),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -422,7 +458,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MoveLeg_Feedb
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers MoveLeg_Feedback_message_members = {
   "hapthexa_msgs::action",  // message namespace
   "MoveLeg_Feedback",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(hapthexa_msgs::action::MoveLeg_Feedback),
   false,  // has_any_key_member_
   MoveLeg_Feedback_message_member_array,  // message members

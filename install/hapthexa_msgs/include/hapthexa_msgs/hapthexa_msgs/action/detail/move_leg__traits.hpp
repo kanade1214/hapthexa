@@ -314,10 +314,24 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: remaining
+  // member: loadcell1
   {
-    out << "remaining: ";
-    rosidl_generator_traits::value_to_yaml(msg.remaining, out);
+    out << "loadcell1: ";
+    rosidl_generator_traits::value_to_yaml(msg.loadcell1, out);
+    out << ", ";
+  }
+
+  // member: loadcell2
+  {
+    out << "loadcell2: ";
+    rosidl_generator_traits::value_to_yaml(msg.loadcell2, out);
+    out << ", ";
+  }
+
+  // member: piezo
+  {
+    out << "piezo: ";
+    rosidl_generator_traits::value_to_yaml(msg.piezo, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -326,13 +340,33 @@ inline void to_block_style_yaml(
   const MoveLeg_Feedback & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: remaining
+  // member: loadcell1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "remaining: ";
-    rosidl_generator_traits::value_to_yaml(msg.remaining, out);
+    out << "loadcell1: ";
+    rosidl_generator_traits::value_to_yaml(msg.loadcell1, out);
+    out << "\n";
+  }
+
+  // member: loadcell2
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "loadcell2: ";
+    rosidl_generator_traits::value_to_yaml(msg.loadcell2, out);
+    out << "\n";
+  }
+
+  // member: piezo
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "piezo: ";
+    rosidl_generator_traits::value_to_yaml(msg.piezo, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

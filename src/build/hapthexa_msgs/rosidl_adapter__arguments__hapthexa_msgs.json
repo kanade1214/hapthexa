@@ -1,0 +1,16 @@
+{
+  "package_name": "hapthexa_msgs",
+  "non_idl_tuples": [
+    "/home/cao/ros2ws/src/hapthexa_msgs:action/MoveLeg.action",
+    "/home/cao/ros2ws/src/hapthexa_msgs:action/MoveLegArgs.action",
+    "/home/cao/ros2ws/src/hapthexa_msgs:action/Gait.action",
+    "/home/cao/ros2ws/src/hapthexa_msgs:action/Empty.action",
+    "/home/cao/ros2ws/src/hapthexa_msgs:msg/Attitude.msg",
+    "/home/cao/ros2ws/src/hapthexa_msgs:msg/Empty.msg",
+    "/home/cao/ros2ws/src/hapthexa_msgs:msg/ForceSensor.msg",
+    "/home/cao/ros2ws/src/hapthexa_msgs:msg/LegArgs.msg",
+    "/home/cao/ros2ws/src/hapthexa_msgs:msg/LegPosition.msg",
+    "/home/cao/ros2ws/src/hapthexa_msgs:srv/GetLegArgs.srv",
+    "/home/cao/ros2ws/src/hapthexa_msgs:srv/GetLegPosition.srv"
+  ]
+}

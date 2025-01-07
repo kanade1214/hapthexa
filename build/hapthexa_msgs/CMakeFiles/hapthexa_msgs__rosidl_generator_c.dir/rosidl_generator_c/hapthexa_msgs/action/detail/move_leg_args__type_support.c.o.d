@@ -13,12 +13,7 @@ CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msg
  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__type_support.h \
- /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
+ /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__struct.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/types.h \
@@ -28,22 +23,6 @@ CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msg
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h \
- /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
- /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
- /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
- /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
- /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__struct.h \
  /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
@@ -73,4 +52,25 @@ CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msg
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+ /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/cao/ros2ws/build/hapthexa_msgs/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__type_support.h

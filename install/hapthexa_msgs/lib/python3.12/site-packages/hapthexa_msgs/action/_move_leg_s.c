@@ -360,13 +360,31 @@ bool hapthexa_msgs__action__move_leg__feedback__convert_from_py(PyObject * _pyms
     assert(strncmp("hapthexa_msgs.action._move_leg.MoveLeg_Feedback", full_classname_dest, 47) == 0);
   }
   hapthexa_msgs__action__MoveLeg_Feedback * ros_message = _ros_message;
-  {  // remaining
-    PyObject * field = PyObject_GetAttrString(_pymsg, "remaining");
+  {  // loadcell1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "loadcell1");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->remaining = PyFloat_AS_DOUBLE(field);
+    ros_message->loadcell1 = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // loadcell2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "loadcell2");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->loadcell2 = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // piezo
+    PyObject * field = PyObject_GetAttrString(_pymsg, "piezo");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->piezo = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -391,11 +409,33 @@ PyObject * hapthexa_msgs__action__move_leg__feedback__convert_to_py(void * raw_r
     }
   }
   hapthexa_msgs__action__MoveLeg_Feedback * ros_message = (hapthexa_msgs__action__MoveLeg_Feedback *)raw_ros_message;
-  {  // remaining
+  {  // loadcell1
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->remaining);
+    field = PyFloat_FromDouble(ros_message->loadcell1);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "remaining", field);
+      int rc = PyObject_SetAttrString(_pymessage, "loadcell1", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // loadcell2
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->loadcell2);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "loadcell2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // piezo
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->piezo);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "piezo", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

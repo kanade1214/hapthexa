@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "hapthexa_msgs/action/detail/gait__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "hapthexa_msgs/action/detail/gait__type_support.h"
 #include "hapthexa_msgs/action/detail/gait__struct.h"
+#include "hapthexa_msgs/action/detail/gait__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -204,16 +204,48 @@ namespace action
 namespace builder
 {
 
-class Init_MoveLeg_Feedback_remaining
+class Init_MoveLeg_Feedback_piezo
 {
 public:
-  Init_MoveLeg_Feedback_remaining()
+  explicit Init_MoveLeg_Feedback_piezo(::hapthexa_msgs::action::MoveLeg_Feedback & msg)
+  : msg_(msg)
+  {}
+  ::hapthexa_msgs::action::MoveLeg_Feedback piezo(::hapthexa_msgs::action::MoveLeg_Feedback::_piezo_type arg)
+  {
+    msg_.piezo = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::hapthexa_msgs::action::MoveLeg_Feedback msg_;
+};
+
+class Init_MoveLeg_Feedback_loadcell2
+{
+public:
+  explicit Init_MoveLeg_Feedback_loadcell2(::hapthexa_msgs::action::MoveLeg_Feedback & msg)
+  : msg_(msg)
+  {}
+  Init_MoveLeg_Feedback_piezo loadcell2(::hapthexa_msgs::action::MoveLeg_Feedback::_loadcell2_type arg)
+  {
+    msg_.loadcell2 = std::move(arg);
+    return Init_MoveLeg_Feedback_piezo(msg_);
+  }
+
+private:
+  ::hapthexa_msgs::action::MoveLeg_Feedback msg_;
+};
+
+class Init_MoveLeg_Feedback_loadcell1
+{
+public:
+  Init_MoveLeg_Feedback_loadcell1()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::hapthexa_msgs::action::MoveLeg_Feedback remaining(::hapthexa_msgs::action::MoveLeg_Feedback::_remaining_type arg)
+  Init_MoveLeg_Feedback_loadcell2 loadcell1(::hapthexa_msgs::action::MoveLeg_Feedback::_loadcell1_type arg)
   {
-    msg_.remaining = std::move(arg);
-    return std::move(msg_);
+    msg_.loadcell1 = std::move(arg);
+    return Init_MoveLeg_Feedback_loadcell2(msg_);
   }
 
 private:
@@ -231,7 +263,7 @@ template<>
 inline
 auto build<::hapthexa_msgs::action::MoveLeg_Feedback>()
 {
-  return hapthexa_msgs::action::builder::Init_MoveLeg_Feedback_remaining();
+  return hapthexa_msgs::action::builder::Init_MoveLeg_Feedback_loadcell1();
 }
 
 }  // namespace hapthexa_msgs

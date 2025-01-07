@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "hapthexa_msgs/srv/detail/get_leg_position__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "hapthexa_msgs/srv/detail/get_leg_position__struct.h"
+#include "hapthexa_msgs/srv/detail/get_leg_position__functions.h"
 #include "hapthexa_msgs/srv/detail/get_leg_position__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

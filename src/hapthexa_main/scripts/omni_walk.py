@@ -7,6 +7,8 @@ from sensor_msgs.msg import Joy
 
 from hapthexa_msgs.action import MoveLeg
 
+from functools import partial
+
 import math
 import numpy as np
 from scipy.spatial.transform import Rotation
@@ -32,6 +34,7 @@ class OmniWalk(Node):
         self.theta = 0
         self.r = 0
         self._exit = False
+        self._back = 0
         self._up_retry = False
         self._down_retry = False
         self._left_retry = False
@@ -45,14 +48,26 @@ class OmniWalk(Node):
 
         self._send_goal_future = [0]*6
         self._get_result_future = [0]*6
+        self._goal_handle = [0]*6
         timer_period = 0.01
         self.timer = self.create_timer(timer_period, self.timer_callback)
         for i in range(6):
             self.generate_trajectory(i, 6 if i%2 else 3)
 
+
     def listener_callback(self, Joy):
         self._theta = math.atan2(Joy.axes[0],Joy.axes[1])
         self._r = math.sqrt((Joy.axes[0]*Joy.axes[0]) + (Joy.axes[1]*Joy.axes[1])) / math.sqrt(2)
+        
+        if Joy.buttons[10] == 1 and self._back == 0:
+            future = self._goal_handle[0].cancel_goal_async()
+            future = self._goal_handle[1].cancel_goal_async()
+            future = self._goal_handle[2].cancel_goal_async()
+            future = self._goal_handle[3].cancel_goal_async()
+            future = self._goal_handle[4].cancel_goal_async()
+            future = self._goal_handle[5].cancel_goal_async()
+            self._end = True
+        self._back = Joy.buttons[10]
         if Joy.axes[5] > 0.9:
             self._up_retry = True
             self._down_retry = False
@@ -99,14 +114,18 @@ class OmniWalk(Node):
         msg.y = float(y)
         msg.z = float(z)
         self._action_clients[num].wait_for_server()
-        self._send_goal_future[num] = self._action_clients[num].send_goal_async(msg)
+        self._send_goal_future[num] = self._action_clients[num].send_goal_async(msg, partial(self.feedback_callback, num))
         self._send_goal_future[num].add_done_callback(lambda future, num=num: self.goal_response_callback(future, num))
 
+    def feedback_callback(self, num, feedback):
+        self.get_logger().info("leg num = %d" % num)
+        self.get_logger().info("value = %f" % feedback.feedback.piezo)
+
     def goal_response_callback(self, future, num):
-        goal_handle = future.result()
-        if not goal_handle.accepted:
+        self._goal_handle[num] = future.result()
+        if not self._goal_handle[num].accepted:
             return
-        self._get_result_future[num] = goal_handle.get_result_async()
+        self._get_result_future[num] = self._goal_handle[num].get_result_async()
         self._get_result_future[num].add_done_callback((lambda future: self.get_result_callback(future, num)))
 
     def sigint_callback(self, sig, frame):

@@ -1,0 +1,58 @@
+[0.043s] Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/v4l2_camera -- -j4 -l4
+[0.359s] [ 42%] Built target v4l2_camera
+[0.609s] [ 71%] Built target v4l2_camera_node
+[0.609s] [100%] Built target v4l2_camera_compose_test
+[0.693s] Invoked command in '/home/cao/ros2ws/build/v4l2_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/v4l2_camera -- -j4 -l4
+[0.859s] Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/v4l2_camera
+[0.918s] -- Install configuration: ""
+[0.920s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include
+[0.920s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera
+[0.922s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/visibility_control.h
+[0.922s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/pixel_format.hpp
+[0.923s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/control.hpp
+[0.925s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/v4l2_camera_device.hpp
+[0.925s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/image_format.hpp
+[0.926s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/fourcc.hpp
+[0.927s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/v4l2_camera.hpp
+[0.928s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/lib/libv4l2_camera.so
+[0.942s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/v4l2_camera/lib/libv4l2_camera.so" to ""
+[0.945s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/lib/v4l2_camera/v4l2_camera_node
+[0.945s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/v4l2_camera/lib/v4l2_camera/v4l2_camera_node" to ""
+[0.949s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/lib/v4l2_camera/v4l2_camera_compose_test
+[0.982s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/v4l2_camera/lib/v4l2_camera/v4l2_camera_compose_test" to ""
+[0.982s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/library_path.sh
+[0.983s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/library_path.dsv
+[0.984s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include
+[0.989s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera
+[0.989s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/visibility_control.h
+[0.989s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/pixel_format.hpp
+[0.989s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/control.hpp
+[0.990s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/v4l2_camera_device.hpp
+[0.990s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/image_format.hpp
+[0.990s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/fourcc.hpp
+[0.990s] -- Up-to-date: /home/cao/ros2ws/install/v4l2_camera/include/v4l2_camera/v4l2_camera.hpp
+[0.995s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/launch
+[0.996s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/launch/v4l2_camera.launch.py
+[0.997s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/ament_index/resource_index/package_run_dependencies/v4l2_camera
+[1.000s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/ament_index/resource_index/parent_prefix_path/v4l2_camera
+[1.000s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/ament_prefix_path.sh
+[1.000s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/ament_prefix_path.dsv
+[1.001s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/path.sh
+[1.006s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/environment/path.dsv
+[1.006s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/local_setup.bash
+[1.006s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/local_setup.sh
+[1.011s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/local_setup.zsh
+[1.011s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/local_setup.dsv
+[1.012s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.dsv
+[1.013s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/ament_index/resource_index/packages/v4l2_camera
+[1.018s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/ament_index/resource_index/rclcpp_components/v4l2_camera
+[1.019s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/export_v4l2_cameraExport.cmake
+[1.019s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/export_v4l2_cameraExport-noconfig.cmake
+[1.020s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.025s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/ament_cmake_export_targets-extras.cmake
+[1.026s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[1.026s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.033s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/v4l2_cameraConfig.cmake
+[1.036s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/cmake/v4l2_cameraConfig-version.cmake
+[1.036s] -- Installing: /home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.xml
+[1.044s] Invoked command in '/home/cao/ros2ws/build/v4l2_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/v4l2_camera

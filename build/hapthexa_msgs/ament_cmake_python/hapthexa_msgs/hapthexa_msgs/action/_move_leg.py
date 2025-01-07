@@ -460,17 +460,23 @@ class MoveLeg_Feedback(metaclass=Metaclass_MoveLeg_Feedback):
     """Message class 'MoveLeg_Feedback'."""
 
     __slots__ = [
-        '_remaining',
+        '_loadcell1',
+        '_loadcell2',
+        '_piezo',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'remaining': 'double',
+        'loadcell1': 'double',
+        'loadcell2': 'double',
+        'piezo': 'double',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
@@ -483,7 +489,9 @@ class MoveLeg_Feedback(metaclass=Metaclass_MoveLeg_Feedback):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.remaining = kwargs.get('remaining', float())
+        self.loadcell1 = kwargs.get('loadcell1', float())
+        self.loadcell2 = kwargs.get('loadcell2', float())
+        self.piezo = kwargs.get('piezo', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -515,7 +523,11 @@ class MoveLeg_Feedback(metaclass=Metaclass_MoveLeg_Feedback):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.remaining != other.remaining:
+        if self.loadcell1 != other.loadcell1:
+            return False
+        if self.loadcell2 != other.loadcell2:
+            return False
+        if self.piezo != other.piezo:
             return False
         return True
 
@@ -525,19 +537,49 @@ class MoveLeg_Feedback(metaclass=Metaclass_MoveLeg_Feedback):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def remaining(self):
-        """Message field 'remaining'."""
-        return self._remaining
+    def loadcell1(self):
+        """Message field 'loadcell1'."""
+        return self._loadcell1
 
-    @remaining.setter
-    def remaining(self, value):
+    @loadcell1.setter
+    def loadcell1(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, float), \
-                "The 'remaining' field must be of type 'float'"
+                "The 'loadcell1' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'remaining' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._remaining = value
+                "The 'loadcell1' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._loadcell1 = value
+
+    @builtins.property
+    def loadcell2(self):
+        """Message field 'loadcell2'."""
+        return self._loadcell2
+
+    @loadcell2.setter
+    def loadcell2(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'loadcell2' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'loadcell2' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._loadcell2 = value
+
+    @builtins.property
+    def piezo(self):
+        """Message field 'piezo'."""
+        return self._piezo
+
+    @piezo.setter
+    def piezo(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'piezo' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'piezo' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._piezo = value
 
 
 # Import statements for member types

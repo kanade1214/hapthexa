@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "hapthexa_msgs/msg/detail/attitude__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "hapthexa_msgs/msg/detail/attitude__struct.h"
 #include "hapthexa_msgs/msg/detail/attitude__functions.h"
+#include "hapthexa_msgs/msg/detail/attitude__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "hapthexa_msgs/msg/detail/attitude__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

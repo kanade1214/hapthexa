@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "hapthexa_msgs/action/detail/move_leg_args__type_support.h"
 #include "hapthexa_msgs/action/detail/move_leg_args__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "hapthexa_msgs/action/detail/move_leg_args__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "hapthexa_msgs/action/detail/move_leg_args__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

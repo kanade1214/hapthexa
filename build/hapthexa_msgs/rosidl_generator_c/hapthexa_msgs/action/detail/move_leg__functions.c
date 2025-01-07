@@ -515,7 +515,9 @@ hapthexa_msgs__action__MoveLeg_Feedback__init(hapthexa_msgs__action__MoveLeg_Fee
   if (!msg) {
     return false;
   }
-  // remaining
+  // loadcell1
+  // loadcell2
+  // piezo
   return true;
 }
 
@@ -525,7 +527,9 @@ hapthexa_msgs__action__MoveLeg_Feedback__fini(hapthexa_msgs__action__MoveLeg_Fee
   if (!msg) {
     return;
   }
-  // remaining
+  // loadcell1
+  // loadcell2
+  // piezo
 }
 
 bool
@@ -534,8 +538,16 @@ hapthexa_msgs__action__MoveLeg_Feedback__are_equal(const hapthexa_msgs__action__
   if (!lhs || !rhs) {
     return false;
   }
-  // remaining
-  if (lhs->remaining != rhs->remaining) {
+  // loadcell1
+  if (lhs->loadcell1 != rhs->loadcell1) {
+    return false;
+  }
+  // loadcell2
+  if (lhs->loadcell2 != rhs->loadcell2) {
+    return false;
+  }
+  // piezo
+  if (lhs->piezo != rhs->piezo) {
     return false;
   }
   return true;
@@ -549,8 +561,12 @@ hapthexa_msgs__action__MoveLeg_Feedback__copy(
   if (!input || !output) {
     return false;
   }
-  // remaining
-  output->remaining = input->remaining;
+  // loadcell1
+  output->loadcell1 = input->loadcell1;
+  // loadcell2
+  output->loadcell2 = input->loadcell2;
+  // piezo
+  output->piezo = input->piezo;
   return true;
 }
 

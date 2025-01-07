@@ -67,7 +67,9 @@ typedef struct hapthexa_msgs__action__MoveLeg_Result__Sequence
 /// Struct defined in action/MoveLeg in the package hapthexa_msgs.
 typedef struct hapthexa_msgs__action__MoveLeg_Feedback
 {
-  double remaining;
+  double loadcell1;
+  double loadcell2;
+  double piezo;
 } hapthexa_msgs__action__MoveLeg_Feedback;
 
 // Struct for a sequence of hapthexa_msgs__action__MoveLeg_Feedback.

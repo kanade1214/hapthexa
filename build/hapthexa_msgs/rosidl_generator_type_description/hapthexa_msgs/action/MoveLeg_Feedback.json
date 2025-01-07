@@ -4,7 +4,27 @@
       "type_name": "hapthexa_msgs/action/MoveLeg_Feedback",
       "fields": [
         {
-          "name": "remaining",
+          "name": "loadcell1",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "loadcell2",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "piezo",
           "type": {
             "type_id": 11,
             "capacity": 0,
@@ -20,7 +40,7 @@
   "type_hashes": [
     {
       "type_name": "hapthexa_msgs/action/MoveLeg_Feedback",
-      "hash_string": "RIHS01_18a630308786511f93415ff6bc79981e36a60ba266e2fcbfefea9d2fe879c160"
+      "hash_string": "RIHS01_25dc5b43050188a91637d1a23487395f09b27ef8a95420e54f174fd0ba88aacf"
     }
   ]
 }

@@ -1,0 +1,375 @@
+[0.486s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.486s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff85547b30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff85547890>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff85547890>>, mixin_verb=('build',))
+[0.653s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.653s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.653s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.653s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.653s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.654s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cao/ros2ws'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extensions ['ignore', 'ignore_ament_install']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extension 'ignore'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extension 'ignore_ament_install'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extensions ['colcon_pkg']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extension 'colcon_pkg'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extensions ['colcon_meta']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extension 'colcon_meta'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extensions ['ros']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_dxl_servo) by extension 'ros'
+[0.806s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hapthexa_dxl_servo' with type 'ros.ament_cmake' and name 'hapthexa_dxl_servo'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extensions ['ignore', 'ignore_ament_install']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extension 'ignore'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extension 'ignore_ament_install'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extensions ['colcon_pkg']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extension 'colcon_pkg'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extensions ['colcon_meta']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extension 'colcon_meta'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extensions ['ros']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_main) by extension 'ros'
+[0.808s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hapthexa_main' with type 'ros.ament_cmake' and name 'hapthexa_main'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extension 'ignore'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extension 'ignore_ament_install'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extensions ['colcon_pkg']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extension 'colcon_pkg'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extensions ['colcon_meta']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extension 'colcon_meta'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extensions ['ros']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/hapthexa_msgs) by extension 'ros'
+[0.813s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hapthexa_msgs' with type 'ros.ament_cmake' and name 'hapthexa_msgs'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extension 'ignore'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extension 'ignore_ament_install'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extensions ['colcon_pkg']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extension 'colcon_pkg'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extensions ['colcon_meta']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extension 'colcon_meta'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extensions ['ros']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_v4l2_camera) by extension 'ros'
+[0.816s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_v4l2_camera' with type 'ros.ament_cmake' and name 'v4l2_camera'
+[0.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.868s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/cao/ros2ws/install
+[0.872s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/jazzy
+[0.875s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.029s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'hapthexa_msgs' is in: /home/cao/ros2ws/install/hapthexa_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding hapthexa_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_target' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.034s] DEBUG:colcon.colcon_core.verb:Building package 'hapthexa_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cao/ros2ws/build/hapthexa_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cao/ros2ws/install/hapthexa_msgs', 'merge_install': False, 'path': '/home/cao/ros2ws/src/hapthexa_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_target' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'v4l2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.036s] DEBUG:colcon.colcon_core.verb:Building package 'v4l2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cao/ros2ws/build/v4l2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cao/ros2ws/install/v4l2_camera', 'merge_install': False, 'path': '/home/cao/ros2ws/src/ros2_v4l2_camera', 'symlink_install': False, 'test_result_base': None}
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_args' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_target' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_clean_cache' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_clean_first' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'cmake_force_configure' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'ament_cmake_args' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'catkin_cmake_args' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_dxl_servo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.037s] DEBUG:colcon.colcon_core.verb:Building package 'hapthexa_dxl_servo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cao/ros2ws/build/hapthexa_dxl_servo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cao/ros2ws/install/hapthexa_dxl_servo', 'merge_install': False, 'path': '/home/cao/ros2ws/src/hapthexa_dxl_servo', 'symlink_install': False, 'test_result_base': None}
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_args' from command line to 'None'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_target' from command line to 'None'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_clean_cache' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_clean_first' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'cmake_force_configure' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'ament_cmake_args' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'catkin_cmake_args' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'hapthexa_main' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.041s] DEBUG:colcon.colcon_core.verb:Building package 'hapthexa_main' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cao/ros2ws/build/hapthexa_main', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cao/ros2ws/install/hapthexa_main', 'merge_install': False, 'path': '/home/cao/ros2ws/src/hapthexa_main', 'symlink_install': False, 'test_result_base': None}
+[1.041s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.046s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.047s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cao/ros2ws/src/hapthexa_msgs' with build type 'ament_cmake'
+[1.047s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cao/ros2ws/src/hapthexa_msgs'
+[1.053s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.054s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.054s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.063s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cao/ros2ws/src/ros2_v4l2_camera' with build type 'ament_cmake'
+[1.063s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cao/ros2ws/src/ros2_v4l2_camera'
+[1.063s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.064s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_msgs -- -j4 -l4
+[1.137s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/v4l2_camera -- -j4 -l4
+[1.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/v4l2_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/v4l2_camera -- -j4 -l4
+[1.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/v4l2_camera
+[1.992s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(v4l2_camera)
+[1.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/v4l2_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/v4l2_camera
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera' for CMake module files
+[2.014s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera' for CMake config files
+[2.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('v4l2_camera', 'cmake_prefix_path')
+[2.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.ps1'
+[2.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.dsv'
+[2.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.sh'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib'
+[2.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('v4l2_camera', 'ld_library_path_lib')
+[2.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.ps1'
+[2.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.dsv'
+[2.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.sh'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/bin'
+[2.080s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib/pkgconfig/v4l2_camera.pc'
+[2.092s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib/python3.12/site-packages'
+[2.099s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/bin'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.ps1'
+[2.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.dsv'
+[2.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.sh'
+[2.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.bash'
+[2.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.zsh'
+[2.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/v4l2_camera/share/colcon-core/packages/v4l2_camera)
+[2.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(v4l2_camera)
+[2.309s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera' for CMake module files
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera' for CMake config files
+[2.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('v4l2_camera', 'cmake_prefix_path')
+[2.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.ps1'
+[2.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.dsv'
+[2.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/cmake_prefix_path.sh'
+[2.326s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib'
+[2.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('v4l2_camera', 'ld_library_path_lib')
+[2.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.ps1'
+[2.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.dsv'
+[2.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/hook/ld_library_path_lib.sh'
+[2.336s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/bin'
+[2.336s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib/pkgconfig/v4l2_camera.pc'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/lib/python3.12/site-packages'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/v4l2_camera/bin'
+[2.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.ps1'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.dsv'
+[2.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.sh'
+[2.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.bash'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/v4l2_camera/share/v4l2_camera/package.zsh'
+[2.376s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/v4l2_camera/share/colcon-core/packages/v4l2_camera)
+[4.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_msgs -- -j4 -l4
+[5.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_msgs
+[5.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_msgs)
+[5.471s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs' for CMake module files
+[5.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_msgs
+[5.472s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs' for CMake config files
+[5.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'cmake_prefix_path')
+[5.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.ps1'
+[5.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.dsv'
+[5.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.sh'
+[5.481s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib'
+[5.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'ld_library_path_lib')
+[5.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.ps1'
+[5.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.dsv'
+[5.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.sh'
+[5.492s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/bin'
+[5.492s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib/pkgconfig/hapthexa_msgs.pc'
+[5.493s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages'
+[5.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'pythonpath')
+[5.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.ps1'
+[5.496s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.dsv'
+[5.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.sh'
+[5.506s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/bin'
+[5.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.ps1'
+[5.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.dsv'
+[5.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.sh'
+[5.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.bash'
+[5.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.zsh'
+[5.523s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_msgs/share/colcon-core/packages/hapthexa_msgs)
+[6.813s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_msgs)
+[6.814s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs' for CMake module files
+[6.819s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs' for CMake config files
+[6.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'cmake_prefix_path')
+[6.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.ps1'
+[6.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.dsv'
+[6.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/cmake_prefix_path.sh'
+[6.839s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib'
+[6.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'ld_library_path_lib')
+[6.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.ps1'
+[6.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.dsv'
+[6.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/ld_library_path_lib.sh'
+[6.852s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/bin'
+[6.852s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib/pkgconfig/hapthexa_msgs.pc'
+[6.853s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages'
+[6.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_msgs', 'pythonpath')
+[6.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.ps1'
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.dsv'
+[6.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/hook/pythonpath.sh'
+[6.859s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_msgs/bin'
+[6.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.ps1'
+[6.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.dsv'
+[6.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.sh'
+[6.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.bash'
+[6.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/package.zsh'
+[6.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_msgs/share/colcon-core/packages/hapthexa_msgs)
+[6.868s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cao/ros2ws/src/hapthexa_dxl_servo' with build type 'ament_cmake'
+[6.869s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cao/ros2ws/src/hapthexa_dxl_servo'
+[6.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.883s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cao/ros2ws/src/hapthexa_main' with build type 'ament_cmake'
+[6.883s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cao/ros2ws/src/hapthexa_main'
+[6.883s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.883s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[6.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_main': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[7.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[7.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[7.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_main': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main
+[7.520s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_main)
+[7.520s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main' for CMake module files
+[7.523s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main' for CMake config files
+[7.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_main', 'cmake_prefix_path')
+[7.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.ps1'
+[7.528s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.dsv'
+[7.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.sh'
+[7.534s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib'
+[7.537s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/bin'
+[7.538s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib/pkgconfig/hapthexa_main.pc'
+[7.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main
+[7.538s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib/python3.12/site-packages'
+[7.539s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/bin'
+[7.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.ps1'
+[7.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv'
+[7.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.sh'
+[7.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.bash'
+[7.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.zsh'
+[7.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_main/share/colcon-core/packages/hapthexa_main)
+[7.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo
+[7.586s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_dxl_servo)
+[7.586s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo' for CMake module files
+[7.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/realsense2_description:/home/cao/ros2ws/install/realsense2_camera_msgs:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/home/cao/ros2ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:/home/cao/ros2ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo
+[7.590s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo' for CMake config files
+[7.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_dxl_servo', 'cmake_prefix_path')
+[7.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.ps1'
+[7.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.dsv'
+[7.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.sh'
+[7.598s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib'
+[7.598s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/bin'
+[7.598s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/pkgconfig/hapthexa_dxl_servo.pc'
+[7.598s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/python3.12/site-packages'
+[7.599s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/bin'
+[7.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.ps1'
+[7.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.dsv'
+[7.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.sh'
+[7.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.bash'
+[7.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.zsh'
+[7.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_dxl_servo/share/colcon-core/packages/hapthexa_dxl_servo)
+[7.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_main)
+[7.632s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main' for CMake module files
+[7.633s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main' for CMake config files
+[7.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_main', 'cmake_prefix_path')
+[7.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.ps1'
+[7.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.dsv'
+[7.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/hook/cmake_prefix_path.sh'
+[7.642s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib'
+[7.642s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/bin'
+[7.642s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib/pkgconfig/hapthexa_main.pc'
+[7.645s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/lib/python3.12/site-packages'
+[7.646s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_main/bin'
+[7.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.ps1'
+[7.648s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv'
+[7.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.sh'
+[7.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.bash'
+[7.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.zsh'
+[7.659s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_main/share/colcon-core/packages/hapthexa_main)
+[7.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hapthexa_dxl_servo)
+[7.770s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo' for CMake module files
+[7.773s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo' for CMake config files
+[7.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('hapthexa_dxl_servo', 'cmake_prefix_path')
+[7.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.ps1'
+[7.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.dsv'
+[7.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/hook/cmake_prefix_path.sh'
+[7.778s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib'
+[7.779s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/bin'
+[7.779s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/pkgconfig/hapthexa_dxl_servo.pc'
+[7.779s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/python3.12/site-packages'
+[7.780s] Level 1:colcon.colcon_core.environment:checking '/home/cao/ros2ws/install/hapthexa_dxl_servo/bin'
+[7.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.ps1'
+[7.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.dsv'
+[7.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.sh'
+[7.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.bash'
+[7.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.zsh'
+[7.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cao/ros2ws/install/hapthexa_dxl_servo/share/colcon-core/packages/hapthexa_dxl_servo)
+[7.795s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.795s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.795s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.796s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.818s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.818s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.818s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.854s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.855s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cao/ros2ws/install/local_setup.ps1'
+[7.857s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cao/ros2ws/install/_local_setup_util_ps1.py'
+[7.860s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cao/ros2ws/install/setup.ps1'
+[7.862s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cao/ros2ws/install/local_setup.sh'
+[7.864s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cao/ros2ws/install/_local_setup_util_sh.py'
+[7.866s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cao/ros2ws/install/setup.sh'
+[7.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cao/ros2ws/install/local_setup.bash'
+[7.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cao/ros2ws/install/setup.bash'
+[7.878s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cao/ros2ws/install/local_setup.zsh'
+[7.879s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cao/ros2ws/install/setup.zsh'

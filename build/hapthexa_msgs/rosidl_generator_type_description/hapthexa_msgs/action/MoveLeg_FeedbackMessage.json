@@ -30,7 +30,27 @@
         "type_name": "hapthexa_msgs/action/MoveLeg_Feedback",
         "fields": [
           {
-            "name": "remaining",
+            "name": "loadcell1",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "loadcell2",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "piezo",
             "type": {
               "type_id": 11,
               "capacity": 0,
@@ -61,11 +81,11 @@
   "type_hashes": [
     {
       "type_name": "hapthexa_msgs/action/MoveLeg_FeedbackMessage",
-      "hash_string": "RIHS01_518d591005caecf25d4b0bf5c33a1251c72c2ea55d10e4a08ebe559be7dcfc52"
+      "hash_string": "RIHS01_2873e856579c627ccd35a147bc55659735ac7d8e84632f77256b67411803a277"
     },
     {
       "type_name": "hapthexa_msgs/action/MoveLeg_Feedback",
-      "hash_string": "RIHS01_18a630308786511f93415ff6bc79981e36a60ba266e2fcbfefea9d2fe879c160"
+      "hash_string": "RIHS01_25dc5b43050188a91637d1a23487395f09b27ef8a95420e54f174fd0ba88aacf"
     },
     {
       "type_name": "unique_identifier_msgs/msg/UUID",

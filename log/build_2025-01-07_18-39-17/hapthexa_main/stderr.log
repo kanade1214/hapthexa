@@ -1,0 +1,17 @@
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In lambda function:
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:66:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<hapthexa_msgs::action::MoveLeg_Feedback_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kloadcell1[m[K’
+   66 |                 feedback.[01;31m[Kloadcell1[m[K = force_sensor->loadcell1;
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:67:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<hapthexa_msgs::action::MoveLeg_Feedback_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kloadcell2[m[K’
+   67 |                 feedback.[01;31m[Kloadcell2[m[K = force_sensor->loadcell2;
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:68:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<hapthexa_msgs::action::MoveLeg_Feedback_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpiezo[m[K’
+   68 |                 feedback.[01;31m[Kpiezo[m[K = force_sensor->piezo;
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In lambda function:
+[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:122:111:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  122 |             [this]([01;35m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<hapthexa_msgs::action::MoveLegArgs>> goal_handle[m[K) {
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hapthexa_leg.dir/build.make:76: CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hapthexa_leg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

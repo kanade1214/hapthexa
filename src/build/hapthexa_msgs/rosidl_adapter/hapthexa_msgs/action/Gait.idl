@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from hapthexa_msgs/action/Gait.action
+// generated code does not contain a copyright notice
+
+
+module hapthexa_msgs {
+  module action {
+    struct Gait_Goal {
+      double w;
+
+      double h;
+
+      double hmax;
+
+      double hmin;
+
+      double z_offset;
+
+      boolean is_swingleg;
+
+      boolean is_firsttime;
+
+      @verbatim (language="comment", text=
+        "遊脚時のphase，phase=1,2,3でそれぞれ持ち上げ，前進，下降" "\n"
+        "phase=0ならば1,2,3の動作を順に行う")
+      int64 phase;
+    };
+    @verbatim (language="comment", text=
+      "終了時の足先のxyz相対座標")
+    struct Gait_Result {
+      double x;
+
+      double y;
+
+      double z;
+    };
+    struct Gait_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

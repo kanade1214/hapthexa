@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "hapthexa_msgs/action/detail/empty__type_support.h"
 #include "hapthexa_msgs/action/detail/empty__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "hapthexa_msgs/action/detail/empty__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "hapthexa_msgs/action/detail/empty__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

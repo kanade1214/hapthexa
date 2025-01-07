@@ -60,7 +60,14 @@ public:
 
         force_sensor_sub_ = this->create_subscription<hapthexa_msgs::msg::ForceSensor>("force_sensor", rclcpp::QoS(10),
                                                                                   [this](const hapthexa_msgs::msg::ForceSensor::SharedPtr force_sensor) {
-                                                                                      force_sensor_z_detected_ = force_sensor->z;
+            if (move_leg_goal_handle_)
+            {
+                auto feedback = std::make_shared<hapthexa_msgs::action::MoveLeg::Feedback>();
+                feedback->loadcell1 = force_sensor->loadcell1;
+                feedback->loadcell2 = force_sensor->loadcell2;
+                feedback->piezo = force_sensor->piezo;
+                move_leg_goal_handle_->publish_feedback(feedback);
+            }
                                                                                   });
 
         move_leg_action_server_ = rclcpp_action::create_server<hapthexa_msgs::action::MoveLeg>(

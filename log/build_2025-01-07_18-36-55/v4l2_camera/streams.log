@@ -1,0 +1,62 @@
+[0.053s] Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cao/ros2ws/src/ros2_v4l2_camera -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/v4l2_camera
+[0.775s] -- The C compiler identification is GNU 13.3.0
+[1.624s] -- The CXX compiler identification is GNU 13.3.0
+[1.737s] -- Detecting C compiler ABI info
+[2.214s] -- Detecting C compiler ABI info - done
+[2.252s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.254s] -- Detecting C compile features
+[2.256s] -- Detecting C compile features - done
+[2.292s] -- Detecting CXX compiler ABI info
+[2.787s] -- Detecting CXX compiler ABI info - done
+[2.841s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.844s] -- Detecting CXX compile features
+[2.850s] -- Detecting CXX compile features - done
+[2.867s] -- Found ament_cmake_auto: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[3.525s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.649s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.714s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.782s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.872s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.198s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.224s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.871s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.935s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.046s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.920s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[7.152s] [33mCMake Warning (dev) at CMakeLists.txt:21 (find_package):
+[7.152s]   Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+[7.153s]   --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+[7.153s]   set the policy and suppress this warning.
+[7.153s] 
+[7.153s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[7.154s] [0m
+[7.163s] [0mCUDA_TOOLKIT_ROOT_DIR not found or specified[0m
+[7.196s] -- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) 
+[7.216s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.358s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.359s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/cao/ros2ws/src/ros2_v4l2_camera/include>
+[7.359s] -- Configured cppcheck exclude dirs and/or files: 
+[7.375s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.375s] -- Configured cpplint exclude dirs and/or files: 
+[7.381s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.381s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.392s] -- Added test 'lint_cmake' to check CMake code style
+[7.401s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.420s] -- Added test 'uncrustify' to check C / C++ code style
+[7.421s] -- Configured uncrustify additional arguments: 
+[7.425s] -- Added test 'xmllint' to check XML markup files
+[7.457s] -- Configuring done (7.4s)
+[7.554s] -- Generating done (0.1s)
+[7.562s] -- Build files have been written to: /home/cao/ros2ws/build/v4l2_camera
+[7.613s] Invoked command in '/home/cao/ros2ws/build/v4l2_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cao/ros2ws/src/ros2_v4l2_camera -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/v4l2_camera
+[7.614s] Invoking command in '/home/cao/ros2ws/build/v4l2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/v4l2_camera -- -j4 -l4
+[7.839s] [ 14%] [32mBuilding CXX object CMakeFiles/v4l2_camera.dir/src/v4l2_camera.cpp.o[0m
+[7.845s] [ 28%] [32mBuilding CXX object CMakeFiles/v4l2_camera.dir/src/v4l2_camera_device.cpp.o[0m
+[52.181s] [ 42%] [32m[1mLinking CXX shared library libv4l2_camera.so[0m
+[55.588s] [ 42%] Built target v4l2_camera
+[55.759s] [ 57%] [32mBuilding CXX object CMakeFiles/v4l2_camera_node.dir/src/v4l2_camera_node.cpp.o[0m
+[68.289s] [ 71%] [32m[1mLinking CXX executable v4l2_camera_node[0m
+[69.461s] [ 71%] Built target v4l2_camera_node
+[69.550s] [ 85%] [32mBuilding CXX object CMakeFiles/v4l2_camera_compose_test.dir/src/v4l2_camera_compose_test.cpp.o[0m
+[97.017s] [100%] [32m[1mLinking CXX executable v4l2_camera_compose_test[0m
+[98.746s] [100%] Built target v4l2_camera_compose_test

@@ -1,0 +1,183 @@
+[0.064s] Invoking command in '/home/cao/ros2ws/build/hapthexa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_msgs -- -j4 -l4
+[0.341s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.530s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.455s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.731s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.803s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.919s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.080s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.478s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.495s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.891s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.234s] -- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[3.510s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[3.561s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.177s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[6.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.504s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.522s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[8.043s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.118s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.211s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.230s] -- Added test 'lint_cmake' to check CMake code style
+[8.238s] -- Added test 'xmllint' to check XML markup files
+[8.259s] -- Configuring done (8.0s)
+[8.803s] -- Generating done (0.5s)
+[8.841s] -- Build files have been written to: /home/cao/ros2ws/build/hapthexa_msgs
+[9.014s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.159s] [  1%] Built target ament_cmake_python_copy_hapthexa_msgs
+[10.054s] running egg_info
+[10.140s] writing hapthexa_msgs.egg-info/PKG-INFO
+[10.144s] writing dependency_links to hapthexa_msgs.egg-info/dependency_links.txt
+[10.144s] writing top-level names to hapthexa_msgs.egg-info/top_level.txt
+[10.394s] reading manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+[10.426s] writing manifest file 'hapthexa_msgs.egg-info/SOURCES.txt'
+[10.749s] [  1%] Built target ament_cmake_python_build_hapthexa_msgs_egg
+[11.365s] [  1%] Built target hapthexa_msgs__rosidl_generator_type_description
+[11.422s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[11.551s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[21.923s] [  2%] Built target hapthexa_msgs__cpp
+[21.985s] [  3%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__functions.c.o[0m
+[22.009s] [  3%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__description.c.o[0m
+[22.010s] [  4%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg__type_support.c.o[0m
+[22.025s] [  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__description.c.o[0m
+[22.425s] [  5%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__functions.c.o[0m
+[22.635s] [  6%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/move_leg_args__type_support.c.o[0m
+[22.680s] [  7%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__description.c.o[0m
+[23.027s] [  8%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__functions.c.o[0m
+[23.201s] [  8%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/gait__type_support.c.o[0m
+[23.394s] [  9%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__description.c.o[0m
+[23.540s] [ 10%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__functions.c.o[0m
+[23.577s] [ 11%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/action/detail/empty__type_support.c.o[0m
+[24.022s] [ 11%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__description.c.o[0m
+[24.130s] [ 12%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__functions.c.o[0m
+[24.327s] [ 13%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/attitude__type_support.c.o[0m
+[24.418s] [ 14%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__description.c.o[0m
+[24.455s] [ 14%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__functions.c.o[0m
+[24.582s] [ 15%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/empty__type_support.c.o[0m
+[24.672s] [ 16%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__description.c.o[0m
+[24.820s] [ 17%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__functions.c.o[0m
+[24.834s] [ 17%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/force_sensor__type_support.c.o[0m
+[24.919s] [ 18%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__description.c.o[0m
+[25.059s] [ 19%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__functions.c.o[0m
+[25.133s] [ 20%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_args__type_support.c.o[0m
+[25.153s] [ 20%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__description.c.o[0m
+[25.157s] [ 21%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__functions.c.o[0m
+[25.400s] [ 22%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/msg/detail/leg_position__type_support.c.o[0m
+[25.419s] [ 23%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__description.c.o[0m
+[25.513s] [ 23%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__functions.c.o[0m
+[25.545s] [ 24%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_args__type_support.c.o[0m
+[25.621s] [ 25%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__description.c.o[0m
+[25.925s] [ 26%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__functions.c.o[0m
+[25.948s] [ 26%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_c.dir/rosidl_generator_c/hapthexa_msgs/srv/detail/get_leg_position__type_support.c.o[0m
+[26.434s] [ 27%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_generator_c.so[0m
+[26.779s] [ 27%] Built target hapthexa_msgs__rosidl_generator_c
+[26.863s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[26.866s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[26.880s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[26.908s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[32.232s] [ 30%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/move_leg__type_support.cpp.o[0m
+[36.472s] [ 31%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/move_leg__type_support.c.o[0m
+[37.165s] [ 32%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/move_leg_args__type_support.c.o[0m
+[37.732s] [ 33%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/gait__type_support.c.o[0m
+[38.241s] [ 33%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/action/detail/empty__type_support.c.o[0m
+[38.679s] [ 34%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/attitude__type_support.c.o[0m
+[39.010s] [ 34%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/move_leg__type_support.cpp.o[0m
+[39.030s] [ 35%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/empty__type_support.c.o[0m
+[39.154s] [ 36%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/move_leg_args__type_support.cpp.o[0m
+[39.272s] [ 37%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/force_sensor__type_support.c.o[0m
+[39.503s] [ 37%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/leg_args__type_support.c.o[0m
+[39.769s] [ 38%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/msg/detail/leg_position__type_support.c.o[0m
+[40.131s] [ 39%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/srv/detail/get_leg_args__type_support.c.o[0m
+[40.588s] [ 40%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hapthexa_msgs/srv/detail/get_leg_position__type_support.c.o[0m
+[41.114s] [ 40%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_typesupport_introspection_c.so[0m
+[41.407s] [ 40%] Built target hapthexa_msgs__rosidl_typesupport_introspection_c
+[41.557s] [ 41%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/move_leg_args__type_support.cpp.o[0m
+[42.554s] [ 42%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/move_leg__type_support_c.cpp.o[0m
+[45.363s] [ 43%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/gait__type_support.cpp.o[0m
+[46.395s] [ 44%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/gait__type_support.cpp.o[0m
+[48.053s] [ 44%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/move_leg_args__type_support_c.cpp.o[0m
+[49.420s] [ 44%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/action/empty__type_support.cpp.o[0m
+[50.515s] [ 45%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/action/detail/dds_fastrtps/empty__type_support.cpp.o[0m
+[52.289s] [ 46%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/gait__type_support_c.cpp.o[0m
+[53.333s] [ 47%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/attitude__type_support.cpp.o[0m
+[54.989s] [ 48%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/empty__type_support.cpp.o[0m
+[56.200s] [ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/action/detail/empty__type_support_c.cpp.o[0m
+[56.756s] [ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/force_sensor__type_support.cpp.o[0m
+[58.542s] [ 49%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/attitude__type_support.cpp.o[0m
+[58.830s] [ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/leg_args__type_support.cpp.o[0m
+[59.663s] [ 51%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/attitude__type_support_c.cpp.o[0m
+[60.475s] [ 52%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/msg/leg_position__type_support.cpp.o[0m
+[61.601s] [ 53%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/empty__type_support.cpp.o[0m
+[62.298s] [ 54%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/srv/get_leg_args__type_support.cpp.o[0m
+[62.434s] [ 54%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/empty__type_support_c.cpp.o[0m
+[64.646s] [ 54%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hapthexa_msgs/srv/get_leg_position__type_support.cpp.o[0m
+[64.803s] [ 55%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/force_sensor__type_support.cpp.o[0m
+[65.253s] [ 56%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/force_sensor__type_support_c.cpp.o[0m
+[67.010s] [ 57%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_cpp.so[0m
+[67.732s] [ 57%] Built target hapthexa_msgs__rosidl_typesupport_cpp
+[67.743s] [ 58%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/leg_args__type_support_c.cpp.o[0m
+[67.978s] [ 59%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/leg_args__type_support.cpp.o[0m
+[70.035s] [ 60%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/msg/detail/leg_position__type_support_c.cpp.o[0m
+[70.438s] [ 60%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/msg/detail/dds_fastrtps/leg_position__type_support.cpp.o[0m
+[72.011s] [ 60%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/srv/detail/get_leg_args__type_support_c.cpp.o[0m
+[72.515s] [ 61%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/srv/detail/dds_fastrtps/get_leg_args__type_support.cpp.o[0m
+[74.391s] [ 62%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hapthexa_msgs/srv/detail/get_leg_position__type_support_c.cpp.o[0m
+[75.490s] [ 63%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hapthexa_msgs/srv/detail/dds_fastrtps/get_leg_position__type_support.cpp.o[0m
+[76.666s] [ 64%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[77.007s] [ 64%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_c
+[78.182s] [ 65%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[78.659s] [ 65%] Built target hapthexa_msgs__rosidl_typesupport_fastrtps_cpp
+[78.702s] [ 66%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[82.798s] [ 67%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/move_leg__type_support.cpp.o[0m
+[85.714s] [ 67%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/gait__type_support.cpp.o[0m
+[88.638s] [ 68%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/empty__type_support.cpp.o[0m
+[91.650s] [ 69%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/attitude__type_support.cpp.o[0m
+[92.818s] [ 70%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/empty__type_support.cpp.o[0m
+[94.025s] [ 70%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/force_sensor__type_support.cpp.o[0m
+[95.206s] [ 71%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/leg_args__type_support.cpp.o[0m
+[96.326s] [ 72%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/msg/detail/leg_position__type_support.cpp.o[0m
+[97.630s] [ 73%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/srv/detail/get_leg_args__type_support.cpp.o[0m
+[99.341s] [ 73%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/srv/detail/get_leg_position__type_support.cpp.o[0m
+[100.775s] [ 74%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hapthexa_msgs/action/detail/move_leg_args__type_support.cpp.o[0m
+[103.373s] [ 75%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[103.779s] [ 75%] Built target hapthexa_msgs__rosidl_typesupport_introspection_cpp
+[103.816s] [ 76%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[106.265s] [ 77%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/move_leg__type_support.cpp.o[0m
+[106.266s] [ 77%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/move_leg_args__type_support.cpp.o[0m
+[106.486s] [ 78%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/empty__type_support.cpp.o[0m
+[106.492s] [ 78%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/attitude__type_support.cpp.o[0m
+[106.656s] [ 79%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/empty__type_support.cpp.o[0m
+[106.713s] [ 80%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/force_sensor__type_support.cpp.o[0m
+[106.822s] [ 81%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/leg_args__type_support.cpp.o[0m
+[106.877s] [ 81%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/msg/leg_position__type_support.cpp.o[0m
+[106.990s] [ 82%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/srv/get_leg_args__type_support.cpp.o[0m
+[107.047s] [ 83%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/srv/get_leg_position__type_support.cpp.o[0m
+[107.170s] [ 84%] [32mBuilding CXX object CMakeFiles/hapthexa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hapthexa_msgs/action/gait__type_support.cpp.o[0m
+[107.381s] [ 85%] [32m[1mLinking CXX shared library libhapthexa_msgs__rosidl_typesupport_c.so[0m
+[107.551s] [ 85%] Built target hapthexa_msgs__rosidl_typesupport_c
+[107.624s] [ 85%] Built target hapthexa_msgs
+[107.707s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[117.261s] [ 86%] Built target hapthexa_msgs__py
+[117.399s] [ 87%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_move_leg_s.c.o[0m
+[117.400s] [ 87%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_gait_s.c.o[0m
+[117.403s] [ 88%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_move_leg_args_s.c.o[0m
+[118.330s] [ 89%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_empty_s.c.o[0m
+[118.333s] [ 90%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_attitude_s.c.o[0m
+[118.339s] [ 91%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/action/_empty_s.c.o[0m
+[118.362s] [ 91%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_force_sensor_s.c.o[0m
+[118.926s] [ 92%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_leg_args_s.c.o[0m
+[118.976s] [ 93%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/msg/_leg_position_s.c.o[0m
+[118.995s] [ 94%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/srv/_get_leg_args_s.c.o[0m
+[119.365s] [ 94%] [32mBuilding C object CMakeFiles/hapthexa_msgs__rosidl_generator_py.dir/rosidl_generator_py/hapthexa_msgs/srv/_get_leg_position_s.c.o[0m
+[119.959s] [ 95%] [32m[1mLinking C shared library libhapthexa_msgs__rosidl_generator_py.so[0m
+[120.153s] [ 95%] Built target hapthexa_msgs__rosidl_generator_py
+[120.251s] [ 95%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[120.272s] [ 96%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[120.282s] [ 97%] [32mBuilding C object CMakeFiles/hapthexa_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/hapthexa_msgs/_hapthexa_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[121.262s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_c.so[0m
+[121.408s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[121.424s] [ 99%] Built target hapthexa_msgs_s__rosidl_typesupport_c
+[121.546s] [ 99%] Built target hapthexa_msgs_s__rosidl_typesupport_introspection_c
+[121.577s] [100%] [32m[1mLinking C shared module rosidl_generator_py/hapthexa_msgs/hapthexa_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[121.701s] [100%] Built target hapthexa_msgs_s__rosidl_typesupport_fastrtps_c
