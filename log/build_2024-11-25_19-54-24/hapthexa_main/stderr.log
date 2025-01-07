@@ -1,4 +1,0 @@
-[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In lambda function:
-[01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:115:111:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-  115 |             [this]([01;35m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<hapthexa_msgs::action::MoveLegArgs>> goal_handle[m[K) {
-      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K

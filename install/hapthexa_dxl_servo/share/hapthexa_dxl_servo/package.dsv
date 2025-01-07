@@ -1,8 +1,0 @@
-source;share/hapthexa_dxl_servo/hook/cmake_prefix_path.ps1
-source;share/hapthexa_dxl_servo/hook/cmake_prefix_path.dsv
-source;share/hapthexa_dxl_servo/hook/cmake_prefix_path.sh
-source;share/hapthexa_dxl_servo/local_setup.bash
-source;share/hapthexa_dxl_servo/local_setup.dsv
-source;share/hapthexa_dxl_servo/local_setup.ps1
-source;share/hapthexa_dxl_servo/local_setup.sh
-source;share/hapthexa_dxl_servo/local_setup.zsh

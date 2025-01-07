@@ -1,4 +1,0 @@
-[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:[m[K In constructor ‘[01m[KHaptHexaServo::[01;32m[KHaptHexaServo[m[K()[m[K’:
-[01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:25:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kresult[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
-   25 |         bool [01;35m[Kresult[m[K = false;
-      |              [01;35m[K^~~~~~[m[K
