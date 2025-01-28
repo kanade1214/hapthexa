@@ -47,6 +47,7 @@ rosidl_generate_interfaces(
   "msg/LegPosition.msg"
   "srv/GetLegArgs.srv"
   "srv/GetLegPosition.srv"
+  "srv/StopLeg.srv"
 )
 
 

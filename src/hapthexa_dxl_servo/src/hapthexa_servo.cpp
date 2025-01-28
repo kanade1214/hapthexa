@@ -2,6 +2,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include "dynamixel_workbench_toolbox/dynamixel_workbench.h"
 #include "hapthexa_msgs/msg/leg_args.hpp"
+#include "hapthexa_msgs/srv/stop_leg.hpp"
 
 #include <thread>
 #include <chrono>
@@ -15,6 +16,16 @@ enum leg_num
     rear_right,
     middle_right,
     front_right,
+};
+
+int leg_num2servo_num[6] =
+{
+    16,
+    13,
+    10,
+    7,
+    4,
+    1,
 };
 
 class HaptHexaServo : public rclcpp::Node
@@ -97,7 +108,7 @@ public:
             int change_succeed_count = 0;
             char is_change_succeed[19] = {};
             for (int id = 1; id <= 18; id++) {
-                if (dxl_wb.writeRegister(id, "Profile_Acceleration", 25,&log)&&dxl_wb.writeRegister(id, "Profile_Velocity", 6000,&log)) {
+                if (dxl_wb.writeRegister(id, "Profile_Acceleration", 30,&log)&&dxl_wb.writeRegister(id, "Profile_Velocity", 80,&log)) {
                     ++change_succeed_count;
                     is_change_succeed[id-1] = 'o';
                 } else {
@@ -119,19 +130,18 @@ public:
 
         result = dxl_wb.initBulkRead(&log);
         RCLCPP_INFO(this->get_logger(), "%s", log);
+        RCLCPP_INFO(this->get_logger(), "result = %d", result);
         // result = dxl_wb.addBulkReadParam(1, "Present_Position", &log);
         // dxl_wb.addBulkReadParam(dxl_id[0], 0, 0, &log);
         float a[18];
         for (int id = 1; id <= 18; id++) {
             dxl_wb.getRadian(id,&a[id-1],&log);
-            RCLCPP_INFO(this->get_logger(), "\n%d:%f",id,a);
+            RCLCPP_INFO(this->get_logger(), "\n%d:%f",id,a[id-1]);
         }
         for (int id = 1; id <= 18; id++) {
             dxl_wb.goalPosition(id,a[id-1],&log);
-            RCLCPP_INFO(this->get_logger(), "\n%d:set%f",id,a);
+            RCLCPP_INFO(this->get_logger(), "\n%d:set%f",id,a[id-1]);
         }
-
-
         sub_[front_left] = this->create_subscription<hapthexa_msgs::msg::LegArgs>(
             "hapthexa/leg/front_left/leg_args", rclcpp::QoS(10),
             [&](hapthexa_msgs::msg::LegArgs::SharedPtr msg) {
@@ -185,6 +195,22 @@ public:
                 dxl_wb.addBulkWriteParam(2, "Goal_Position", -msg->femur_arg * (2048 / M_PI) + 2048, &log);
                 dxl_wb.addBulkWriteParam(3, "Goal_Position", msg->tibia_arg * (2048 / M_PI) + 2048, &log);
                 dxl_wb.bulkWrite(&log);
+            });
+        
+        server_ = this->create_service<hapthexa_msgs::srv::StopLeg>(
+            "hapthexa/leg/stop",
+            [&](std::shared_ptr<hapthexa_msgs::srv::StopLeg::Request> req,std::shared_ptr<hapthexa_msgs::srv::StopLeg::Response> res) {
+                const char *log;
+                float rad[3];
+                dxl_wb.getRadian(leg_num2servo_num[req->num],&rad[0],&log);
+                dxl_wb.getRadian(leg_num2servo_num[req->num]+1,&rad[1],&log);
+                dxl_wb.getRadian(leg_num2servo_num[req->num]+2,&rad[2],&log);
+                dxl_wb.goalPosition(leg_num2servo_num[req->num],rad[0],&log);
+                dxl_wb.goalPosition(leg_num2servo_num[req->num]+1,rad[1],&log);
+                dxl_wb.goalPosition(leg_num2servo_num[req->num]+2,rad[2],&log);
+                res->coxa_arg = rad[0];
+                res->femur_arg = rad[1];
+                res->tibia_arg = rad[2];
             });
 
         for (int i = 0; i < 6; i++)
@@ -242,7 +268,7 @@ public:
 private:
     DynamixelWorkbench dxl_wb;
     std::array<rclcpp::Subscription<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> sub_;
-
+    rclcpp::Service<hapthexa_msgs::srv::StopLeg>::SharedPtr server_;
     std::array<std::string, 6> leg_names = {"front_left", "middle_left", "rear_left", "rear_right", "middle_right", "front_right"};
     std::array<rclcpp::Publisher<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> present_leg_args_pubs;
     rclcpp::TimerBase::SharedPtr timer_;
