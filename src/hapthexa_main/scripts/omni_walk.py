@@ -24,6 +24,7 @@ class OmniWalk(Node):
         super().__init__('omni_walk')
         self._leg_names = ['front_left', 'middle_left', 'rear_left', 'rear_right', 'middle_right', 'front_right']
         self._leg_args  = [math.pi/6.0, math.pi/2.0, math.pi*5.0/6.0, -math.pi*5.0/6.0, -math.pi/2.0, -math.pi/6.0]
+        self._leg_finish  = 0
         self._w = 9.0
         self._depth = 12.5 
         self._shrink = 8
@@ -67,6 +68,7 @@ class OmniWalk(Node):
         if Joy.buttons[10] == 1 and self._back == 0:
             self.req.num = 0
             future = self.stop.call_async(self.req)
+            
             self.req.num = 1
             future = self.stop.call_async(self.req)
             self.req.num = 2
@@ -121,22 +123,27 @@ class OmniWalk(Node):
             # t2 = np.array([[t_abs_xy * math.cos(self._leg_args[num] + rotate) - t[0][0] , t_abs_xy * math.sin(self._leg_args[num] + rotate) - t[1][0] , 0]]).T
             t2 = np.array([[0,0,0]]).T
         elif phase == 4:
-            t1 = np.array([[self._past_leg[num][0], self._past_leg[num][1],       0]]).T
+            t1 = np.array([[self._past_leg[num][0], self._past_leg[num][1], self._past_leg[num][2]]]).T
             t2 = np.array([[0,0,0]]).T
         elif phase == 5:
-            t1 = np.array([[-self._w/2.0*math.cos(self.theta)*self.r, -self._w/2.0*math.sin(self.theta)*self.r,       0]]).T
+            t1 = np.array([[-self._w/2.0*math.cos(self.theta)*self.r, -self._w/2.0*math.sin(self.theta)*self.r, self._past_leg[num][2]]]).T
             # t2 = np.array([[t_abs_xy * math.cos(self._leg_args[num] + rotate) - t[0][0] , t_abs_xy * math.sin(self._leg_args[num] - rotate) - t[1][0] , 0]]).T
             t2 = np.array([[0,0,0]]).T
         elif phase == 6:
-            t1 = np.array([[-self._w/2.0*math.cos(self.theta)*self.r, -self._w/2.0*math.sin(self.theta)*self.r,       0]]).T
+            t1 = np.array([[-self._w/2.0*math.cos(self.theta)*self.r, -self._w/2.0*math.sin(self.theta)*self.r, self._past_leg[num][2]]]).T
             # t2 = np.array([[t_abs_xy * math.cos(self._leg_args[num] + rotate) - t[0][0] , t_abs_xy * math.sin(self._leg_args[num] - rotate) - t[1][0] , 0]]).T
             t2 = np.array([[0,0,0]]).T
-        print(t1[0][0])
         t1+=t2
         self._past_leg[num][0] = t1[0][0]
         self._past_leg[num][1] = t1[1][0]
         self._past_leg[num][2] = t1[2][0]
+        # self.get_logger().info("leg num = %d" % num)
+        # self.get_logger().info("value = %f" % t1[2][0])
+        # self.get_logger().info("phase = %d" % self._phase)
         t+=t1
+        self.get_logger().info("x = %d" % t[0][0])
+        self.get_logger().info("y = %f" % t[1][0])
+        self.get_logger().info("z = %d" % t[2][0])
         self.move_leg(num, t[0], t[1], t[2])
 
     def move_leg(self, num, x, y, z):
@@ -149,69 +156,38 @@ class OmniWalk(Node):
         self._send_goal_future[num].add_done_callback(lambda future, num=num: self.goal_response_callback(future, num))
 
     def feedback_callback(self, num, feedback):
-        self.get_logger().info("leg num = %d" % num)
-        self.get_logger().info("value = %f" % feedback.feedback.piezo)
-        self.get_logger().info("phase = %d" % self._phase)
+        # self.get_logger().info("leg num = %d" % num)
+        # self.get_logger().info("value = %f" % feedback.feedback.piezo)
+        # self.get_logger().info("phase = %d" % self._phase)
         match self._phase:
             case 3:
-                self.get_logger().info("touch leg num = %d" % num)
                 if num == 1 or num == 3 or num == 5:
                     if feedback.feedback.piezo > self._drop_leg_piezo:
+                        if self.check_leg(num):
+                            self.get_logger().info("multi error = %d" % num)
+                            return
+                        self.get_logger().info("touch leg num = %d" % num)
                         self.req.num = num
                         future = self.stop.call_async(self.req)
+                        rclpy.spin_until_future_complete(self, future)
+                        res = future.result()
+                        self._past_leg[num][0] = res.x
+                        self._past_leg[num][1] = res.y
+                        self._past_leg[num][2] = res.z
                         future = self._goal_handle[num].cancel_goal_async()
                         self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
-                        self._move_succeed_leg_count += 1
-                        if self._move_succeed_leg_count == 6:
-                            if self._exit:
-                                self.get_logger().info('SIGINT')
-                                rclpy.shutdown()
-                                exit()
-                            self._move_succeed_leg_count = 0
-                            if(self._phase == 6):
-                                self._phase = 1
-                                self._end = True
-                                return
-                            else:
-                                self._phase += 1
-                            if(self._phase == 4):
-                                self.r = self._r
-                                self.theta = self._theta
-                            print(type(self._past_leg[1][0]))
-                            print(self._past_leg[1][1])
-                            print(self._past_leg[1][2])
-                            if(self._end == False):
-                                for i in range(6):
-                                    self.generate_trajectory(i, self._phase if i%2 else self._phase + 3 if self._phase in {1, 2, 3} else self._phase - 3,0.3)
+                        self.finish_leg(num)
             case 6:
                 if num == 0 or num == 2 or num == 4:
                     if feedback.feedback.piezo > self._drop_leg_piezo:
+                        if self.check_leg(num):
+                            self.get_logger().info("multi error = %d" % num)
+                            return
                         self.req.num = num
                         future = self.stop.call_async(self.req)
                         future = self._goal_handle[num].cancel_goal_async()
                         self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
-                        self._move_succeed_leg_count += 1
-                        if self._move_succeed_leg_count == 6:
-                            if self._exit:
-                                self.get_logger().info('SIGINT')
-                                rclpy.shutdown()
-                                exit()
-                            self._move_succeed_leg_count = 0
-                            if(self._phase == 6):
-                                self._phase = 1
-                                self._end = True
-                                return
-                            else:
-                                self._phase += 1
-                            if(self._phase == 4):
-                                self.r = self._r
-                                self.theta = self._theta
-                            print(type(self._past_leg[1][0]))
-                            print(self._past_leg[1][1])
-                            print(self._past_leg[1][2])
-                            if(self._end == False):
-                                for i in range(6):
-                                    self.generate_trajectory(i, self._phase if i%2 else self._phase + 3 if self._phase in {1, 2, 3} else self._phase - 3,0.3)
+                        self.finish_leg(num)
 
 
     def goal_response_callback(self, future, num):
@@ -229,34 +205,10 @@ class OmniWalk(Node):
 
 
     def get_result_callback(self, future, num):
-        # result = future.result().result
-        result = future.result()
-        print(self._move_succeed_leg_count)
-        print(result)
-        self.get_logger().info('result recieved {0}'.format(num))
+        result = future.result().status
 
-        self._move_succeed_leg_count += 1
-        if self._move_succeed_leg_count == 6:
-            if self._exit:
-                self.get_logger().info('SIGINT')
-                rclpy.shutdown()
-                exit()
-            self._move_succeed_leg_count = 0
-            if(self._phase == 6):
-                self._phase = 1
-                self._end = True
-                return
-            else:
-                self._phase += 1
-            if(self._phase == 4):
-                self.r = self._r
-                self.theta = self._theta
-            print(type(self._past_leg[1][0]))
-            print(self._past_leg[1][1])
-            print(self._past_leg[1][2])
-            if(self._end == False):
-                for i in range(6):
-                    self.generate_trajectory(i, self._phase if i%2 else self._phase + 3 if self._phase in {1, 2, 3} else self._phase - 3,0.3)
+        self.get_logger().info('result recieved {0}'.format(num))
+        self.finish_leg(num)
 
     def timer_callback(self): 
         if self._exit:
@@ -303,6 +255,43 @@ class OmniWalk(Node):
                 for i in range(6):
                     self.generate_trajectory(i, self._phase if i%2 else self._phase + 3 if self._phase in {1, 2, 3} else self._phase - 3,0.3)
                 return
+            
+    def finish_leg(self, num):
+        self.get_logger().info("fini = %d" % self._leg_finish)
+        if self.check_leg(num):
+            self.get_logger().info("error = %d" % num)
+            return
+        self._leg_finish += (2**num)
+        if self._leg_finish == 63:
+            if self._exit:
+                self.get_logger().info('SIGINT')
+                rclpy.shutdown()
+                exit()
+            self._leg_finish = 0
+            if(self._phase == 6):
+                self._phase = 1
+                self._end = True
+                return
+            else:
+                self._phase += 1
+            if(self._phase == 4):
+                self.r = self._r
+                self.theta = self._theta
+            if(self._end == False):
+                for i in range(6):
+                    self.generate_trajectory(i, self._phase if i%2 else self._phase + 3 if self._phase in {1, 2, 3} else self._phase - 3, 0.3)
+        elif self._leg_finish > 63: 
+            self.get_logger().info("over error = %d" % self._leg_finish)
+
+    def reset_leg(self, num):
+        self._leg_finish = 0
+
+    def check_leg(self, num):
+        div = self._leg_finish // (2**num)
+        if (div % 2) == 1:
+            return 1
+        else:
+            return 0
 
 
 def main(args=None):

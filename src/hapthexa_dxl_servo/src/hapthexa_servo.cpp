@@ -3,7 +3,7 @@
 #include "dynamixel_workbench_toolbox/dynamixel_workbench.h"
 #include "hapthexa_msgs/msg/leg_args.hpp"
 #include "hapthexa_msgs/srv/stop_leg.hpp"
-
+#include <eigen3/Eigen/Geometry>
 #include <thread>
 #include <chrono>
 using namespace std::chrono_literals;
@@ -208,9 +208,17 @@ public:
                 dxl_wb.goalPosition(leg_num2servo_num[req->num],rad[0],&log);
                 dxl_wb.goalPosition(leg_num2servo_num[req->num]+1,rad[1],&log);
                 dxl_wb.goalPosition(leg_num2servo_num[req->num]+2,rad[2],&log);
-                res->coxa_arg = rad[0];
-                res->femur_arg = rad[1];
-                res->tibia_arg = rad[2];
+                Eigen::Vector3d ret;
+                Eigen::Matrix3d rot;
+                double l1 = 4.5, l2 = 10.0, l3 = 15.0;
+                double r = l1 + l2 * cos(rad[1]) + l3 * cos(rad[1] + rad[2]);
+                Eigen::Vector3d xyz(r * cos(rad[0]), r * sin(rad[0]), l2 * sin(rad[1]) + l3 * sin(rad[1] + rad[2]));
+                res->x = xyz.x();
+                res->y = xyz.y();
+                res->z = xyz.z();
+                RCLCPP_INFO(this->get_logger(), "%f\n", xyz.x());
+                RCLCPP_INFO(this->get_logger(), "%f\n", xyz.y());
+                RCLCPP_INFO(this->get_logger(), "%f\n", xyz.z());
             });
 
         for (int i = 0; i < 6; i++)

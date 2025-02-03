@@ -2,6 +2,6 @@ int64 num
 
 ---
 
-float64 coxa_arg
-float64 femur_arg
-float64 tibia_arg
+float64 x
+float64 y
+float64 z
