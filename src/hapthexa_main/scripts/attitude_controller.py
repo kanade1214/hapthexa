@@ -77,7 +77,7 @@ class AttitudeController(rclpy.node.Node):
     def __init__(self):
         super().__init__('attitude_controller')
 
-        self._enable_attitude_control = False
+        self._enable_attitude_control = True
 
         self._leg_names = ['front_left', 'middle_left', 'rear_left', 'rear_right', 'middle_right', 'front_right']
         self._leg_args  = [pi/6.0, pi/2.0, pi*5.0/6.0, -pi*5.0/6.0, -pi/2.0, -pi/6.0]

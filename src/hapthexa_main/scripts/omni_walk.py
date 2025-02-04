@@ -28,11 +28,11 @@ class OmniWalk(Node):
         self._w = 9.0
         self._depth = 12.5 
         self._shrink = 8
-        self._drop_leg_piezo = 0.03
+        self._drop_leg_piezo = 0.05
         self._past_leg  = np.array([[0, 0,0], [0, 0,0], [0, 0,0], [0, 0,0],[0, 0,0], [0, 0,0]],dtype=float)
         self._phase = 0
         self._move_succeed_leg_count = 0
-        self._h = 5 
+        self._h = 8
         self._theta = 0
         self._r = 0
         self.theta = 0
@@ -68,7 +68,6 @@ class OmniWalk(Node):
         if Joy.buttons[10] == 1 and self._back == 0:
             self.req.num = 0
             future = self.stop.call_async(self.req)
-            
             self.req.num = 1
             future = self.stop.call_async(self.req)
             self.req.num = 2
@@ -137,9 +136,15 @@ class OmniWalk(Node):
         self._past_leg[num][0] = t1[0][0]
         self._past_leg[num][1] = t1[1][0]
         self._past_leg[num][2] = t1[2][0]
-        # self.get_logger().info("leg num = %d" % num)
+        self.get_logger().info("leg num = %d" % num)
         # self.get_logger().info("value = %f" % t1[2][0])
-        # self.get_logger().info("phase = %d" % self._phase)
+        self.get_logger().info("phase = %d" % self._phase)
+        self.get_logger().info("x = %d" % t[0][0])
+        self.get_logger().info("y = %f" % t[1][0])
+        self.get_logger().info("z = %d" % t[2][0])
+        self.get_logger().info("x = %d" % t1[0][0])
+        self.get_logger().info("y = %f" % t1[1][0])
+        self.get_logger().info("z = %d" % t1[2][0])
         t+=t1
         self.get_logger().info("x = %d" % t[0][0])
         self.get_logger().info("y = %f" % t[1][0])
@@ -168,14 +173,13 @@ class OmniWalk(Node):
                             return
                         self.get_logger().info("touch leg num = %d" % num)
                         self.req.num = num
+                        while not self.stop.wait_for_service(timeout_sec=1.0):
+                            self.get_logger().info('service not available, waiting again...')
                         future = self.stop.call_async(self.req)
-                        rclpy.spin_until_future_complete(self, future)
-                        res = future.result()
-                        self._past_leg[num][0] = res.x
-                        self._past_leg[num][1] = res.y
-                        self._past_leg[num][2] = res.z
+                        future.add_done_callback(lambda future: self.handle_stop_response(future, num))
+
                         future = self._goal_handle[num].cancel_goal_async()
-                        self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
+                        # self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
                         self.finish_leg(num)
             case 6:
                 if num == 0 or num == 2 or num == 4:
@@ -183,11 +187,31 @@ class OmniWalk(Node):
                         if self.check_leg(num):
                             self.get_logger().info("multi error = %d" % num)
                             return
+                        self.get_logger().info("leg num = %d" % num)
+                        self.get_logger().info("value = %f" % feedback.feedback.piezo)
+                        self.get_logger().info("phase = %d" % self._phase)
+                        self.get_logger().info("touch leg num = %d" % num)
                         self.req.num = num
+                        while not self.stop.wait_for_service(timeout_sec=1.0):
+                            self.get_logger().info('service not available, waiting again...')
                         future = self.stop.call_async(self.req)
+                        future.add_done_callback(lambda future: self.handle_stop_response(future, num))
+
                         future = self._goal_handle[num].cancel_goal_async()
-                        self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
+                        # self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
                         self.finish_leg(num)
+    
+    def handle_stop_response(self, future, num):
+        res = future.result()
+        r = Rotation.from_rotvec([0, 0, self._leg_args[num]])
+        t = np.dot(np.array(r.as_matrix()),np.array([[22-self._shrink, 0, 0]]).T) + np.array([[0, 0, -self._depth]]).T
+        if res is None:
+            self.get_logger().warn(f"Service call for leg {num} did not return a response!")
+        else:
+            self.get_logger().info(f"Leg {num} stopped at: x={res.x}, y={res.y}, z={res.z}")
+            self._past_leg[num][0] = res.x - t[0][0]
+            self._past_leg[num][1] = res.y - t[1][0]
+            self._past_leg[num][2] = res.z - t[2][0]
 
 
     def goal_response_callback(self, future, num):
@@ -214,7 +238,7 @@ class OmniWalk(Node):
         if self._exit:
             self.get_logger().info('SIGINT')
             rclpy.shutdown()
-            exit()
+            exit()  
         if(self._end == True):
             if(self._up_retry == True):
                 self._depth += 1
