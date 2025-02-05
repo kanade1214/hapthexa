@@ -11,6 +11,7 @@ from hapthexa_msgs.msg import Attitude
 from hapthexa_msgs.action import Empty
 from hapthexa_msgs.action import MoveLeg
 from hapthexa_msgs.action import MoveLegArgs
+from hapthexa_msgs.srv import EnableAttitude
 
 from rcl_interfaces.msg import ParameterEvent
 
@@ -77,7 +78,7 @@ class AttitudeController(rclpy.node.Node):
     def __init__(self):
         super().__init__('attitude_controller')
 
-        self._enable_attitude_control = True
+        self._enable_attitude_control = False
 
         self._leg_names = ['front_left', 'middle_left', 'rear_left', 'rear_right', 'middle_right', 'front_right']
         self._leg_args  = [pi/6.0, pi/2.0, pi*5.0/6.0, -pi*5.0/6.0, -pi/2.0, -pi/6.0]
@@ -86,7 +87,7 @@ class AttitudeController(rclpy.node.Node):
             self._leg_position_pubs.append(self.create_publisher(LegPosition, 'hapthexa/leg/'+leg_name+'/leg_position', 10))
         
         self._attitude_sub = self.create_subscription(Attitude, 'hapthexa/attitude', self.attitude_callback,10)
-
+        self._enable = self.create_service(EnableAttitude, 'hapthexa/enable_attitude', self.enable_callback)
         self._parameter_event_sub = self.create_subscription(ParameterEvent, 'parameter_events', self.parameter_callback,10)
         self.declare_parameter("kp", 0.01)
         self.declare_parameter("ki", 0.0)
@@ -150,6 +151,10 @@ class AttitudeController(rclpy.node.Node):
         
         self._roll_goal = 0.0
         self._pitch_goal = 0.0
+
+    def enable_callback(self, request, response):
+        self._enable_attitude_control = request.enable
+        return response
 
     def move_leg(self, num, x, y, z):
         msg = MoveLeg.Goal()

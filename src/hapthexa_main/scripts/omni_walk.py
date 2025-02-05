@@ -7,6 +7,8 @@ from sensor_msgs.msg import Joy
 
 from hapthexa_msgs.action import MoveLeg
 from hapthexa_msgs.srv import StopLeg
+from hapthexa_msgs.srv import ChangeCurrent
+from hapthexa_msgs.srv import EnableAttitude
 
 from functools import partial
 
@@ -24,15 +26,29 @@ class OmniWalk(Node):
         super().__init__('omni_walk')
         self._leg_names = ['front_left', 'middle_left', 'rear_left', 'rear_right', 'middle_right', 'front_right']
         self._leg_args  = [math.pi/6.0, math.pi/2.0, math.pi*5.0/6.0, -math.pi*5.0/6.0, -math.pi/2.0, -math.pi/6.0]
+        self._leg_current  = [ \
+        [350, 350, 350], \
+        [350, 350, 350], \
+        [350, 30, 30], \
+        [350, 350, 350], \
+        [350, 350, 350], \
+        [350, 350, 350]]
+        # self._leg_current  = [ \
+        # [50, 50, 50], \
+        # [50, 50, 50], \
+        # [50, 50, 50], \
+        # [50, 50, 50], \
+        # [50, 50, 50], \
+        # [50, 50, 50]]
         self._leg_finish  = 0
-        self._w = 9.0
-        self._depth = 12.5 
+        self._w = 7.0
+        self._depth = 16.5 
         self._shrink = 8
         self._drop_leg_piezo = 0.05
         self._past_leg  = np.array([[0, 0,0], [0, 0,0], [0, 0,0], [0, 0,0],[0, 0,0], [0, 0,0]],dtype=float)
         self._phase = 0
         self._move_succeed_leg_count = 0
-        self._h = 8
+        self._h = 10
         self._theta = 0
         self._r = 0
         self.theta = 0
@@ -51,7 +67,12 @@ class OmniWalk(Node):
             self._action_clients.append(ActionClient(self, MoveLeg, 'hapthexa/leg/'+leg_name+'/move_leg'))
 
         self.stop = self.create_client(StopLeg, 'hapthexa/leg/stop')
+        self.change_current = self.create_client(ChangeCurrent, 'hapthexa/leg/change_current')
+        self.enable_attitude = self.create_client(EnableAttitude, 'hapthexa/enable_attitude')
         self.req = StopLeg.Request()
+        self.req_current = ChangeCurrent.Request()
+        self.req_attitude = EnableAttitude.Request()
+        self.req_attitude.enable = False
         self._send_goal_future = [0]*6
         self._get_result_future = [0]*6
         self._goal_handle = [0]*6
@@ -86,6 +107,12 @@ class OmniWalk(Node):
             future = self._goal_handle[5].cancel_goal_async()
             self._end = True
         self._back = Joy.buttons[10]
+        if Joy.buttons[11] == 1 and self.req_attitude.enable == False:
+            self.req_attitude.enable = True
+            future2 = self.enable_attitude.call_async(self.req_attitude)
+        elif self.req_attitude.enable == True:
+            self.req_attitude.enable = False
+            future2 = self.enable_attitude.call_async(self.req_attitude)
         if Joy.axes[5] > 0.9:
             self._up_retry = True
             self._down_retry = False
@@ -110,6 +137,10 @@ class OmniWalk(Node):
         t = np.dot(np.array(r.as_matrix()),np.array([[22-self._shrink, 0, 0]]).T) + np.array([[0, 0, -self._depth]]).T
         print(r)
         t_abs_xy = np.sqrt(t[0][0]*t[0][0] + t[1][0]*t[1][0])
+        self.req_current.num = num
+        self.req_current.current_coxa = self._leg_current[phase-1][0]
+        self.req_current.current_femur = self._leg_current[phase-1][1]
+        self.req_current.current_tibia = self._leg_current[phase-1][2]
         if   phase == 1:
             t1 = np.array([[self._past_leg[num][0], self._past_leg[num][1], self._h]]).T
             t2 = np.array([[0,0,0]]).T
@@ -149,6 +180,7 @@ class OmniWalk(Node):
         self.get_logger().info("x = %d" % t[0][0])
         self.get_logger().info("y = %f" % t[1][0])
         self.get_logger().info("z = %d" % t[2][0])
+        future1 = self.change_current.call_async(self.req_current)
         self.move_leg(num, t[0], t[1], t[2])
 
     def move_leg(self, num, x, y, z):
@@ -179,6 +211,11 @@ class OmniWalk(Node):
                         future.add_done_callback(lambda future: self.handle_stop_response(future, num))
 
                         future = self._goal_handle[num].cancel_goal_async()
+                        self.req_current.num = num
+                        self.req_current.current_coxa = self._leg_current[3][0]
+                        self.req_current.current_femur = self._leg_current[3][1]
+                        self.req_current.current_tibia = self._leg_current[3][2]
+                        future1 = self.change_current.call_async(self.req_current)
                         # self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
                         self.finish_leg(num)
             case 6:
@@ -198,6 +235,11 @@ class OmniWalk(Node):
                         future.add_done_callback(lambda future: self.handle_stop_response(future, num))
 
                         future = self._goal_handle[num].cancel_goal_async()
+                        self.req_current.num = num
+                        self.req_current.current_coxa = self._leg_current[3][0]
+                        self.req_current.current_femur = self._leg_current[3][1]
+                        self.req_current.current_tibia = self._leg_current[3][2]
+                        future1 = self.change_current.call_async(self.req_current)
                         # self._send_goal_future[num].add_done_callback(lambda future, num=num: self.cancel_callback(future, num))
                         self.finish_leg(num)
     

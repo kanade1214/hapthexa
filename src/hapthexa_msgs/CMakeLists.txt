@@ -48,6 +48,8 @@ rosidl_generate_interfaces(
   "srv/GetLegArgs.srv"
   "srv/GetLegPosition.srv"
   "srv/StopLeg.srv"
+  "srv/ChangeCurrent.srv"
+  "srv/EnableAttitude.srv"
 )
 
 

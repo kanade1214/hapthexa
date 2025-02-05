@@ -27,6 +27,8 @@ enum joint_num
     tibia
 };
 
+double criterion = 1.0;
+
 class HaptHexaLeg : public rclcpp::Node
 {
 public:
@@ -36,7 +38,7 @@ public:
         this->get_parameter("leg_install_angle", leg_install_angle_);
         leg_position_sub_ = this->create_subscription<hapthexa_msgs::msg::LegPosition>(
             "leg_position", rclcpp::QoS(10), [this](const hapthexa_msgs::msg::LegPosition::SharedPtr leg_position) {
-                // publish_args_by_position(leg_position->x, leg_position->y, leg_position->z);
+                publish_args_by_position(leg_position->x, leg_position->y, leg_position->z);
                 base_leg_position_ = *leg_position;
             });
         leg_args_pub_ = this->create_publisher<hapthexa_msgs::msg::LegArgs>("leg_args", rclcpp::QoS(10));
@@ -80,10 +82,10 @@ public:
                 return rclcpp_action::CancelResponse::ACCEPT;
             },
             [this](const std::shared_ptr<rclcpp_action::ServerGoalHandle<hapthexa_msgs::action::MoveLeg>> goal_handle) {
-                // if (move_leg_goal_handle_)
-                // {
-                //     move_leg_goal_handle_->abort(move_leg_result_);
-                // }
+                if (move_leg_goal_handle_)
+                {
+                    move_leg_goal_handle_->abort(move_leg_result_);
+                }
                 RCLCPP_INFO(this->get_logger(), "move_leg action acepted");
                 move_leg_goal_handle_ = goal_handle;
                 move_leg_feedback_.reset(new hapthexa_msgs::action::MoveLeg::Feedback);
@@ -158,9 +160,13 @@ public:
                 now_position << present_leg_position_.x, present_leg_position_.y, present_leg_position_.z;
                 Eigen::Vector3d diff = move_leg_goal_xyz_ - now_position;
                 RCLCPP_INFO(this->get_logger(), "%lf",diff.norm());
-                if(diff.norm() < 1.0){
+                if(diff.norm() < criterion){
+                    criterion = 1.0;
                     move_leg_goal_handle_->succeed(move_leg_result_);
                     move_leg_goal_handle_.reset();
+                }else{
+                    criterion+=0.002;
+                    RCLCPP_INFO(this->get_logger(), "%lf",criterion);
                 }
             }
             // if (move_leg_goal_handle_)

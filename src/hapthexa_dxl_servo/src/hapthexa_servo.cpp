@@ -3,6 +3,7 @@
 #include "dynamixel_workbench_toolbox/dynamixel_workbench.h"
 #include "hapthexa_msgs/msg/leg_args.hpp"
 #include "hapthexa_msgs/srv/stop_leg.hpp"
+#include "hapthexa_msgs/srv/change_current.hpp"
 #include <eigen3/Eigen/Geometry>
 #include <thread>
 #include <chrono>
@@ -34,7 +35,7 @@ double leg_angle[6] =
     0,
     -1.5707963267948966,
     -1.5707963267948966,
-    0,
+    3.141592653589793,
     1.5707963267948966,
 };
 
@@ -96,7 +97,7 @@ public:
             // is_change_succeed[18] = '\0';
             // RCLCPP_INFO(this->get_logger(), "\nchange joint mode result: [%s]", is_change_succeed);
             for (int id = 1; id <= 18; id++) {
-                if (dxl_wb.currentBasedPositionMode(id,250,&log)) {
+                if (dxl_wb.currentBasedPositionMode(id,400,&log)) {
                     ++change_succeed_count;
                     is_change_succeed[id-1] = 'o';
                 } else {
@@ -207,7 +208,7 @@ public:
                 dxl_wb.bulkWrite(&log);
             });
         
-        server_ = this->create_service<hapthexa_msgs::srv::StopLeg>(
+        server_stop = this->create_service<hapthexa_msgs::srv::StopLeg>(
             "hapthexa/leg/stop",
             [&](std::shared_ptr<hapthexa_msgs::srv::StopLeg::Request> req,std::shared_ptr<hapthexa_msgs::srv::StopLeg::Response> res) {
                 const char *log;
@@ -238,6 +239,15 @@ public:
                 RCLCPP_INFO(this->get_logger(), "%f\n", xyz.x());
                 RCLCPP_INFO(this->get_logger(), "%f\n", xyz.y());
                 RCLCPP_INFO(this->get_logger(), "%f\n", xyz.z());
+            });
+
+        server_current = this->create_service<hapthexa_msgs::srv::ChangeCurrent>(
+            "hapthexa/leg/change_current",
+            [&](std::shared_ptr<hapthexa_msgs::srv::ChangeCurrent::Request> req,std::shared_ptr<hapthexa_msgs::srv::ChangeCurrent::Response> res) {
+                const char *log;
+                RCLCPP_INFO(this->get_logger(), "%d\n", dxl_wb.writeRegister(leg_num2servo_num[req->num], "Goal_Current", req->current_coxa,&log));
+                RCLCPP_INFO(this->get_logger(), "%d\n", dxl_wb.writeRegister(leg_num2servo_num[req->num]+1, "Goal_Current", req->current_femur,&log));
+                RCLCPP_INFO(this->get_logger(), "%d\n", dxl_wb.writeRegister(leg_num2servo_num[req->num]+2, "Goal_Current", req->current_tibia,&log));
             });
 
         for (int i = 0; i < 6; i++)
@@ -295,7 +305,8 @@ public:
 private:
     DynamixelWorkbench dxl_wb;
     std::array<rclcpp::Subscription<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> sub_;
-    rclcpp::Service<hapthexa_msgs::srv::StopLeg>::SharedPtr server_;
+    rclcpp::Service<hapthexa_msgs::srv::StopLeg>::SharedPtr server_stop;
+    rclcpp::Service<hapthexa_msgs::srv::ChangeCurrent>::SharedPtr server_current;
     std::array<std::string, 6> leg_names = {"front_left", "middle_left", "rear_left", "rear_right", "middle_right", "front_right"};
     std::array<rclcpp::Publisher<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> present_leg_args_pubs;
     rclcpp::TimerBase::SharedPtr timer_;
