@@ -3,14 +3,10 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 import os
+import sys
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    return LaunchDescription([
-        DeclareLaunchArgument(
-            'model_path',
-            default_value='',
-            description='Path to the TorchScript policy model (.pt)'
-        ),
     script_path = os.path.join(
         get_package_share_directory('hapthexa_policy'),
         '../../lib/hapthexa_policy/policy_node.py'
@@ -24,7 +20,7 @@ def generate_launch_description():
         ),
         Node(
             package='hapthexa_policy',
-            executable='python3',
+            executable=sys.executable,
             arguments=[script_path],
             name='policy_node',
             parameters=[{
