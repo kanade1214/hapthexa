@@ -1,0 +1,91 @@
+[0.017s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_main -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_main
+[0.157s] -- The C compiler identification is GNU 13.3.0
+[0.289s] -- The CXX compiler identification is GNU 13.3.0
+[0.321s] -- Detecting C compiler ABI info
+[0.519s] -- Detecting C compiler ABI info - done
+[0.536s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.538s] -- Detecting C compile features
+[0.540s] -- Detecting C compile features - done
+[0.557s] -- Detecting CXX compiler ABI info
+[0.893s] -- Detecting CXX compiler ABI info - done
+[0.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.907s] -- Detecting CXX compile features
+[0.911s] -- Detecting CXX compile features - done
+[1.015s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.018s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.354s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.636s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.688s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.708s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.732s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.760s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.871s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.884s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.006s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.057s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.183s] -- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.273s] -- Found hapthexa_msgs: 0.0.0 (/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake)
+[2.321s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.606s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.609s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.610s] -- Configured cppcheck include dirs: 
+[2.610s] -- Configured cppcheck exclude dirs and/or files: 
+[2.611s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.612s] -- Configured cpplint exclude dirs and/or files: 
+[2.613s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.613s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.614s] -- Added test 'lint_cmake' to check CMake code style
+[2.616s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.618s] -- Added test 'uncrustify' to check C / C++ code style
+[2.618s] -- Configured uncrustify additional arguments: 
+[2.620s] -- Added test 'xmllint' to check XML markup files
+[2.622s] -- Configuring done (2.6s)
+[2.648s] -- Generating done (0.0s)
+[2.652s] -- Build files have been written to: /home/cao/ros2ws/build/hapthexa_main
+[2.676s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_main -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_main
+[2.676s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[2.795s] [ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o[0m
+[12.444s] [01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In lambda function:
+[12.444s] [01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:124:111:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.444s]   124 | [01;35m[Ked_ptr<rclcpp_action::ServerGoalHandle<hapthexa_msgs::action::MoveLegArgs>> goal_handle[m[K) {
+[12.444s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[12.444s] 
+[39.484s] [100%] [32m[1mLinking CXX executable hapthexa_leg[0m
+[42.570s] [100%] Built target hapthexa_leg
+[42.590s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[42.631s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main
+[42.646s] -- Install configuration: ""
+[42.646s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg
+[42.701s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg" to ""
+[42.701s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/__init__.py
+[42.702s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/attitude_controller.py
+[42.702s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py
+[42.702s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py
+[42.858s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py
+[42.966s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_omni.py
+[43.075s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py
+[43.112s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py
+[43.142s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py
+[43.166s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simple_walk.py
+[43.192s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simplewalk_action.py
+[43.206s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_roughwalk_action.py
+[43.221s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_simplewalk_flonly.py
+[43.236s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/wakeup_by_action.py
+[43.245s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch.py
+[43.260s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch2.py
+[43.266s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/package_run_dependencies/hapthexa_main
+[43.266s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/parent_prefix_path/hapthexa_main
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.sh
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.dsv
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.sh
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.dsv
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.bash
+[43.267s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.sh
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.zsh
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.dsv
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/packages/hapthexa_main
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig.cmake
+[43.269s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig-version.cmake
+[43.270s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.xml
+[43.273s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': AMENT_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cao/ros2ws/install/hapthexa_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main

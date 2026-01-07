@@ -1,0 +1,65 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+-- Found hapthexa_msgs: 0.0.0 (/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/cao/ros2ws/build/hapthexa_main
+[ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hapthexa_leg[0m
+[100%] Built target hapthexa_leg
+-- Install configuration: ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg
+-- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg" to ""
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/__init__.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/attitude_controller.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py
+-- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_omni.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simple_walk.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simplewalk_action.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_roughwalk_action.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_simplewalk_flonly.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/wakeup_by_action.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch2.py
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/package_run_dependencies/hapthexa_main
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/parent_prefix_path/hapthexa_main
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.bash
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.sh
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.zsh
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/packages/hapthexa_main
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig-version.cmake
+-- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.xml

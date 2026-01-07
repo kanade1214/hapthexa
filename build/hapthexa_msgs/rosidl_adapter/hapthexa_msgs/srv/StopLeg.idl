@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from hapthexa_msgs/srv/StopLeg.srv
+// generated code does not contain a copyright notice
+
+
+module hapthexa_msgs {
+  module srv {
+    struct StopLeg_Request {
+      int64 num;
+    };
+    struct StopLeg_Response {
+      double x;
+
+      double y;
+
+      double z;
+    };
+  };
+};

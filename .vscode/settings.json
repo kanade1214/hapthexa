@@ -7,6 +7,7 @@
         "optional": "cpp",
         "cmath": "cpp",
         "thread": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "change_current__struct.h": "c"
     }
 }

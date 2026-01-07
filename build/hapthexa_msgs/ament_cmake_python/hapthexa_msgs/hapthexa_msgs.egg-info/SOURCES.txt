@@ -16,5 +16,8 @@ hapthexa_msgs/msg/_force_sensor.py
 hapthexa_msgs/msg/_leg_args.py
 hapthexa_msgs/msg/_leg_position.py
 hapthexa_msgs/srv/__init__.py
+hapthexa_msgs/srv/_change_current.py
+hapthexa_msgs/srv/_enable_attitude.py
 hapthexa_msgs/srv/_get_leg_args.py
 hapthexa_msgs/srv/_get_leg_position.py
+hapthexa_msgs/srv/_stop_leg.py

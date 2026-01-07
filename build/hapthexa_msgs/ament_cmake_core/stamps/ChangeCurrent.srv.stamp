@@ -1,0 +1,6 @@
+int64 num
+int64 current_coxa
+int64 current_femur
+int64 current_tibia
+
+---

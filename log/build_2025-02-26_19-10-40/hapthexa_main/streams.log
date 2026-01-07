@@ -1,0 +1,91 @@
+[0.034s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_main -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_main
+[0.317s] -- The C compiler identification is GNU 13.3.0
+[0.469s] -- The CXX compiler identification is GNU 13.3.0
+[0.527s] -- Detecting C compiler ABI info
+[0.772s] -- Detecting C compiler ABI info - done
+[0.793s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.795s] -- Detecting C compile features
+[0.796s] -- Detecting C compile features - done
+[0.822s] -- Detecting CXX compiler ABI info
+[1.134s] -- Detecting CXX compiler ABI info - done
+[1.152s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.153s] -- Detecting CXX compile features
+[1.154s] -- Detecting CXX compile features - done
+[1.287s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.294s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.667s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.964s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.019s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.040s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.076s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.138s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.262s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.271s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.403s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.444s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.609s] -- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.673s] -- Found hapthexa_msgs: 0.0.0 (/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake)
+[2.743s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.019s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.022s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.024s] -- Configured cppcheck include dirs: 
+[3.024s] -- Configured cppcheck exclude dirs and/or files: 
+[3.025s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.025s] -- Configured cpplint exclude dirs and/or files: 
+[3.027s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.027s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.028s] -- Added test 'lint_cmake' to check CMake code style
+[3.030s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.033s] -- Added test 'uncrustify' to check C / C++ code style
+[3.033s] -- Configured uncrustify additional arguments: 
+[3.034s] -- Added test 'xmllint' to check XML markup files
+[3.037s] -- Configuring done (3.0s)
+[3.060s] -- Generating done (0.0s)
+[3.062s] -- Build files have been written to: /home/cao/ros2ws/build/hapthexa_main
+[3.095s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_main -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_main
+[3.096s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[3.250s] [ 50%] [32mBuilding CXX object CMakeFiles/hapthexa_leg.dir/src/hapthexa_leg.cpp.o[0m
+[13.527s] [01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:[m[K In lambda function:
+[13.527s] [01m[K/home/cao/ros2ws/src/hapthexa_main/src/hapthexa_leg.cpp:124:111:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.527s]   124 | [01;35m[K::shared_ptr<rclcpp_action::ServerGoalHandle<hapthexa_msgs::action::MoveLegArgs>> goal_handle[m[K) {
+[13.528s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[13.528s] 
+[55.513s] [100%] [32m[1mLinking CXX executable hapthexa_leg[0m
+[58.757s] [100%] Built target hapthexa_leg
+[58.798s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_main -- -j4 -l4
+[58.863s] Invoking command in '/home/cao/ros2ws/build/hapthexa_main': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main
+[58.884s] -- Install configuration: ""
+[58.886s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg
+[59.001s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/hapthexa_leg" to ""
+[59.002s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/__init__.py
+[59.002s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/attitude_controller.py
+[59.002s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py
+[59.002s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py
+[59.002s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py
+[59.003s] -- Up-to-date: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_omni.py
+[59.005s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py
+[59.005s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py
+[59.006s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py
+[59.006s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simple_walk.py
+[59.006s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/simplewalk_action.py
+[59.009s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_roughwalk_action.py
+[59.010s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/test_simplewalk_flonly.py
+[59.010s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/wakeup_by_action.py
+[59.010s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch.py
+[59.010s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/launch2.py
+[59.011s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/package_run_dependencies/hapthexa_main
+[59.011s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/parent_prefix_path/hapthexa_main
+[59.011s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.sh
+[59.011s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/ament_prefix_path.dsv
+[59.011s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.sh
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/environment/path.dsv
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.bash
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.sh
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.zsh
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/local_setup.dsv
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.dsv
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/ament_index/resource_index/packages/hapthexa_main
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig.cmake
+[59.012s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/cmake/hapthexa_mainConfig-version.cmake
+[59.013s] -- Installing: /home/cao/ros2ws/install/hapthexa_main/share/hapthexa_main/package.xml
+[59.017s] Invoked command in '/home/cao/ros2ws/build/hapthexa_main' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_main

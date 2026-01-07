@@ -73,6 +73,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/cao/ros2ws/src/hapthexa_main/scripts/omni_walk.py"
     "/home/cao/ros2ws/src/hapthexa_main/scripts/relative_rough_walk.py"
     "/home/cao/ros2ws/src/hapthexa_main/scripts/relative_simple_walk.py"
+    "/home/cao/ros2ws/src/hapthexa_main/scripts/rough_omni.py"
     "/home/cao/ros2ws/src/hapthexa_main/scripts/rough_walk.py"
     "/home/cao/ros2ws/src/hapthexa_main/scripts/roughwalk_action.py"
     "/home/cao/ros2ws/src/hapthexa_main/scripts/sensor_checker.py"

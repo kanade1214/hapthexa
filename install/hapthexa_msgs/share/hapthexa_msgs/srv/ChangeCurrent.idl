@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from hapthexa_msgs/srv/ChangeCurrent.srv
+// generated code does not contain a copyright notice
+
+
+module hapthexa_msgs {
+  module srv {
+    struct ChangeCurrent_Request {
+      int64 num;
+
+      int64 current_coxa;
+
+      int64 current_femur;
+
+      int64 current_tibia;
+    };
+    struct ChangeCurrent_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

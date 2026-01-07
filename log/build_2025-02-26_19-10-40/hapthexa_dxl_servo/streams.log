@@ -1,0 +1,116 @@
+[0.022s] Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_dxl_servo -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_dxl_servo
+[0.338s] -- The C compiler identification is GNU 13.3.0
+[0.492s] -- The CXX compiler identification is GNU 13.3.0
+[0.541s] -- Detecting C compiler ABI info
+[0.800s] -- Detecting C compiler ABI info - done
+[0.820s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.821s] -- Detecting C compile features
+[0.823s] -- Detecting C compile features - done
+[0.847s] -- Detecting CXX compiler ABI info
+[1.149s] -- Detecting CXX compiler ABI info - done
+[1.165s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.166s] -- Detecting CXX compile features
+[1.166s] -- Detecting CXX compile features - done
+[1.300s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.306s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.670s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.988s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.045s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.073s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.130s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.176s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.324s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.334s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.437s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.486s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.641s] -- Found rclcpp_action: 28.1.5 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.742s] -- Found hapthexa_msgs: 0.0.0 (/home/cao/ros2ws/install/hapthexa_msgs/share/hapthexa_msgs/cmake)
+[2.795s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.081s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.085s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.085s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/cao/ros2ws/src/hapthexa_dxl_servo/include>
+[3.085s] -- Configured cppcheck exclude dirs and/or files: 
+[3.091s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.092s] -- Configured cpplint exclude dirs and/or files: 
+[3.093s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.094s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.100s] -- Added test 'lint_cmake' to check CMake code style
+[3.101s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.105s] -- Added test 'uncrustify' to check C / C++ code style
+[3.107s] -- Configured uncrustify additional arguments: 
+[3.108s] -- Added test 'xmllint' to check XML markup files
+[3.113s] -- Configuring done (3.1s)
+[3.165s] -- Generating done (0.0s)
+[3.173s] -- Build files have been written to: /home/cao/ros2ws/build/hapthexa_dxl_servo
+[3.204s] Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/cao/ros2ws/src/hapthexa_dxl_servo -DCMAKE_INSTALL_PREFIX=/home/cao/ros2ws/install/hapthexa_dxl_servo
+[3.208s] Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[3.331s] [ 14%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_item.cpp.o[0m
+[3.475s] [ 28%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o[0m
+[4.141s] [ 42%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o[0m
+[4.270s] [ 57%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench.dir/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o[0m
+[4.653s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_driver.cpp:[m[K In member function ‘[01m[Kbool DynamixelDriver::[01;32m[KreadRegister[m[K(uint8_t, uint16_t, uint16_t, uint32_t*, const char**)[m[K’:
+[4.654s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_driver.cpp:776:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kdata_read[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[4.654s]   776 |   uint8_t [01;35m[Kdata_read[m[K[length];
+[4.654s]       |           [01;35m[K^~~~~~~~~[m[K
+[4.657s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_driver.cpp:[m[K In member function ‘[01m[Kbool DynamixelDriver::[01;32m[KsyncWrite[m[K(uint8_t, uint8_t*, uint8_t, int32_t*, uint8_t, const char**)[m[K’:
+[4.657s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/dynamixel_workbench_toolbox/dynamixel_driver.cpp:1012:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kmulti_parameter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[4.657s]  1012 |   uint8_t [01;35m[Kmulti_parameter[m[K[4*data_num_for_each_id];
+[4.657s]       |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[4.971s] [ 71%] [32m[1mLinking CXX static library libdynamixel_workbench.a[0m
+[5.106s] [ 71%] Built target dynamixel_workbench
+[5.166s] [ 85%] [32mBuilding CXX object CMakeFiles/hapthexa_servo.dir/src/hapthexa_servo.cpp.o[0m
+[14.167s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.168s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[14.168s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[14.168s]                  from [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:2[m[K:
+[14.168s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:[m[K In lambda function:
+[14.169s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:235:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Khapthexa_msgs::srv::StopLeg_Request_<std::allocator<void> >::_num_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[14.169s]   235 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"%d\n"[m[K, [32m[Kreq->num[m[K);
+[14.169s]       |                                                 [01;35m[K^~~~~~[m[K  [32m[K~~~~~~~~[m[K
+[14.169s]       |                                                              [32m[K|[m[K
+[14.169s]       |                                                              [32m[Khapthexa_msgs::srv::StopLeg_Request_<std::allocator<void> >::_num_type {aka long int}[m[K
+[14.174s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:235:51:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[14.174s]   235 |                 RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K\n", req->num);
+[14.175s]       |                                                  [01;36m[K~^[m[K
+[14.175s]       |                                                   [01;36m[K|[m[K
+[14.176s]       |                                                   [01;36m[Kint[m[K
+[14.179s]       |                                                  [32m[K%ld[m[K
+[14.191s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:[m[K In lambda function:
+[14.192s] [01m[K/home/cao/ros2ws/src/hapthexa_dxl_servo/src/hapthexa_servo.cpp:246:142:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.192s]   246 | angeCurrent::Request> req,[01;35m[Kstd::shared_ptr<hapthexa_msgs::srv::ChangeCurrent::Response> res[m[K) {
+[14.192s]       |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[14.192s] 
+[39.406s] [100%] [32m[1mLinking CXX executable hapthexa_servo[0m
+[41.267s] [100%] Built target hapthexa_servo
+[41.312s] Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/cao/ros2ws/build/hapthexa_dxl_servo -- -j4 -l4
+[41.420s] Invoking command in '/home/cao/ros2ws/build/hapthexa_dxl_servo': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo
+[41.441s] -- Install configuration: ""
+[41.441s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/hapthexa_servo
+[41.476s] -- Set non-toolchain portion of runtime path of "/home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/hapthexa_servo" to ""
+[41.477s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor.py
+[41.477s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/force_sensor_calibrate.py
+[41.479s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/lib/hapthexa_dxl_servo/forcesensor_read.py
+[41.479s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/launch.py
+[41.481s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config
+[41.481s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_left.yaml
+[41.481s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_left.yaml
+[41.481s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_right.yaml
+[41.481s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/rear_right.yaml
+[41.482s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/front_right.yaml
+[41.482s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/config/middle_left.yaml
+[41.482s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/package_run_dependencies/hapthexa_dxl_servo
+[41.482s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/parent_prefix_path/hapthexa_dxl_servo
+[41.482s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.sh
+[41.483s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/ament_prefix_path.dsv
+[41.486s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.sh
+[41.488s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/environment/path.dsv
+[41.491s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.bash
+[41.492s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.sh
+[41.492s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.zsh
+[41.492s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/local_setup.dsv
+[41.492s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.dsv
+[41.493s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/ament_index/resource_index/packages/hapthexa_dxl_servo
+[41.493s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig.cmake
+[41.493s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/cmake/hapthexa_dxl_servoConfig-version.cmake
+[41.493s] -- Installing: /home/cao/ros2ws/install/hapthexa_dxl_servo/share/hapthexa_dxl_servo/package.xml
+[41.497s] Invoked command in '/home/cao/ros2ws/build/hapthexa_dxl_servo' returned '0': CMAKE_PREFIX_PATH=/home/cao/ros2ws/install/hapthexa_msgs:/home/cao/ros2ws/install/v4l2_camera:/home/cao/ros2ws/install/hapthexa_main:/home/cao/ros2ws/install/hapthexa_dxl_servo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/cao/ros2ws/install/hapthexa_msgs/lib:/home/cao/ros2ws/install/v4l2_camera/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/cao/ros2ws/build/hapthexa_dxl_servo

@@ -4,6 +4,7 @@
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/omni_walk.py
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_rough_walk.py
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/relative_simple_walk.py
+/home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_omni.py
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/rough_walk.py
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/roughwalk_action.py
 /home/cao/ros2ws/install/hapthexa_main/lib/hapthexa_main/sensor_checker.py
