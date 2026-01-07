@@ -3,7 +3,7 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 import os
-import sys
+import shutil
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
@@ -20,7 +20,7 @@ def generate_launch_description():
         ),
         Node(
             package='hapthexa_policy',
-            executable=sys.executable,
+            executable=shutil.which('python3'),
             arguments=[script_path],
             name='policy_node',
             parameters=[{

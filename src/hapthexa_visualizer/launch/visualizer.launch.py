@@ -1,5 +1,5 @@
 import os
-import sys
+import shutil
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -13,7 +13,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='hapthexa_visualizer',
-            executable=sys.executable,
+            executable=shutil.which('python3'),
             arguments=[script_path],
             name='visualizer_node',
             output='screen'
