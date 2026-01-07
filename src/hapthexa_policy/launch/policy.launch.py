@@ -11,9 +11,21 @@ def generate_launch_description():
             default_value='',
             description='Path to the TorchScript policy model (.pt)'
         ),
+    script_path = os.path.join(
+        get_package_share_directory('hapthexa_policy'),
+        '../../lib/hapthexa_policy/policy_node.py'
+    )
+
+    return LaunchDescription([
+        DeclareLaunchArgument(
+            'model_path',
+            default_value='',
+            description='Path to the TorchScript policy model (.pt)'
+        ),
         Node(
             package='hapthexa_policy',
-            executable='policy_node.py',
+            executable='python3',
+            arguments=[script_path],
             name='policy_node',
             parameters=[{
                 'model_path': LaunchConfiguration('model_path'),
