@@ -39,34 +39,47 @@ class ForcesensorRead(Node):
         self.sensor.open()
 
     def timer_callback(self):
-        # シリアルバッファにたまっているデータを処理
+        # シリアルバッファにたまっているデータを一括処理
         while self.sensor.in_waiting >= 23:
-            header = self.sensor.read(1)
-            if header == b'\xff':
-                data = self.sensor.read(22)
-                if len(data) < 22:
-                    break
-                
-                checksum = 0
-                for i in range(21):
-                    checksum += data[i]
-                
-                if (checksum & 0xff) == data[21]:
-                    self.publish_sensor_data(data)
-                # チェックサム不一致の場合は次のバイトから同期を試みる（ループ継続）
-            # ヘッダ不一致の場合もループ継続して次を探す
+            # ヘッダ 0xff を探す
+            if self.sensor.read(1) != b'\xff':
+                continue
+            
+            # データ22バイトを一度に読み取る
+            data = self.sensor.read(22)
+            if len(data) < 22:
+                # 22バイトに満たない場合は、不完全なパケットとして破棄または
+                # 次のタイマーコールで処理されるようにバッファに残る必要があるが、
+                # read(22)した時点で消えているため、このパケットは失敗として扱う
+                break
+            
+            # チェックサム計算 (21バイト分の合計)
+            checksum = 0
+            for i in range(21):
+                checksum += data[i]
+            
+            if (checksum & 0xff) == data[21]:
+                self.publish_sensor_data(data)
+            else:
+                # 同期ズレの可能性があるため警告（デバッグ用）
+                # self.get_logger().warn('Checksum error')
+                pass
 
     def publish_sensor_data(self, data):
-        # 各脚のパブリッシュ（メッセージインスタンスを分けることで安全性を確保）
-        def create_and_fill(l1, p, l2, raw_p, z_threshold=127):
+        # データの物理的な意味に合わせてパブリッシュ
+        # Piezoデータなどのスケール変換
+        def create_and_fill(l1, d4, l2, piezo_raw, is_z_bit=False):
             msg = ForceSensor()
-            msg.loadcell1_raw = l1
-            msg.loadcell2_raw = l2
-            msg.piezo_raw = raw_p
-            msg.piezo = float(raw_p)/255.0
-            msg.z = raw_p > z_threshold
+            msg.loadcell1_raw = int(l1)
+            msg.loadcell2_raw = int(l2)
+            msg.piezo_raw = int(piezo_raw)
+            # piezo_raw を float に変換 (0.0 - 1.0)
+            msg.piezo = float(piezo_raw) / 255.0
+            # z軸の判定（オリジナル実装に則る）
+            msg.z = piezo_raw > 127
             return msg
 
+        # オリジナルのマッピングを維持
         self.front_left_pub_.publish(create_and_fill(data[3], data[4], data[5], data[4]))
         self.middle_left_pub_.publish(create_and_fill(data[6], data[7], data[8], data[7]))
         self.rear_left_pub_.publish(create_and_fill(data[9], data[10], data[11], data[10]))
@@ -74,10 +87,16 @@ class ForcesensorRead(Node):
         self.middle_right_pub_.publish(create_and_fill(data[15], data[16], data[17], data[16]))
         self.front_right_pub_.publish(create_and_fill(data[0], data[1], data[2], data[1]))
 
+        # 姿勢データの処理
         attitude = Attitude()
-        attitude.roll = (data[18] if data[18] < 128 else data[18] - 255)/127*pi
-        attitude.pitch = (data[19] if data[19] < 128 else data[19] - 255)/127*pi
-        attitude.yaw = (data[20] if data[20] < 128 else data[20] - 255)/127*pi
+        # 符号付き1バイトとして処理 (-127 to 127) -> ラジアン変換
+        def to_rad(val):
+            signed_val = val if val < 128 else val - 256
+            return float(signed_val) / 127.0 * pi
+
+        attitude.roll = to_rad(data[18])
+        attitude.pitch = to_rad(data[19])
+        attitude.yaw = to_rad(data[20])
         self.attitude_pub.publish(attitude)
 
 
