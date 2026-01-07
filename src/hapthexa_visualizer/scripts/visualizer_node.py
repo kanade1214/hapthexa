@@ -1,6 +1,12 @@
-#!/home/kanade/hapthexa/venv/bin/python3
-
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Joy
+from hapthexa_msgs.msg import LegArgs, Attitude, ForceSensor
 from std_srvs.srv import SetBool
+import dearpygui.dearpygui as dpg
+import numpy as np
+import threading
+import math
 
 class VisualizerNode(Node):
     def __init__(self):
