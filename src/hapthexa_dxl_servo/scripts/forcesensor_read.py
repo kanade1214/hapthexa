@@ -2,6 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 from hapthexa_msgs.msg import ForceSensor
 from hapthexa_msgs.msg import Attitude
@@ -15,14 +16,18 @@ class ForcesensorRead(Node):
 
     def __init__(self):
         super().__init__('forcesensor_read')
-        self.front_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/front_left/force_sensor_raw', 10)
-        self.middle_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/middle_left/force_sensor_raw', 10)
-        self.rear_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/rear_left/force_sensor_raw', 10)
-        self.front_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/front_right/force_sensor_raw', 10)
-        self.middle_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/middle_right/force_sensor_raw', 10)
-        self.rear_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/rear_right/force_sensor_raw', 10)
+        
+        # QoS設定: ジッターを抑えるためにBest Effortに設定
+        qos_profile = QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT)
 
-        self.attitude_pub = self.create_publisher(Attitude, 'hapthexa/attitude', 10)
+        self.front_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/front_left/force_sensor_raw', qos_profile)
+        self.middle_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/middle_left/force_sensor_raw', qos_profile)
+        self.rear_left_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/rear_left/force_sensor_raw', qos_profile)
+        self.front_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/front_right/force_sensor_raw', qos_profile)
+        self.middle_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/middle_right/force_sensor_raw', qos_profile)
+        self.rear_right_pub_ = self.create_publisher(ForceSensor, 'hapthexa/leg/rear_right/force_sensor_raw', qos_profile)
+
+        self.attitude_pub = self.create_publisher(Attitude, 'hapthexa/attitude', qos_profile)
 
         timer_period = 0.001  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -30,66 +35,50 @@ class ForcesensorRead(Node):
         self.sensor = serial.Serial()
         self.sensor.baudrate = 115200
         self.sensor.port = "/dev/ttyACM0"
+        self.sensor.timeout = 0 # 非ブロッキング
         self.sensor.open()
 
     def timer_callback(self):
-        if self.sensor.in_waiting >= 23:
-            if self.sensor.read(1) == b'\xff':
-                data = self.sensor.read(22) # センサのデータ21byte+チェックサム1byte
+        # シリアルバッファにたまっているデータを処理
+        while self.sensor.in_waiting >= 23:
+            header = self.sensor.read(1)
+            if header == b'\xff':
+                data = self.sensor.read(22)
+                if len(data) < 22:
+                    break
+                
                 checksum = 0
                 for i in range(21):
                     checksum += data[i]
-                if int(checksum) & 0xff == data[21]:
-                    msg = ForceSensor()
-                    msg.z = data[4] > 127
-                    msg.piezo = float(data[4])/255.0
-                    msg.loadcell1_raw = data[3]
-                    msg.loadcell2_raw = data[5]
-                    msg.piezo_raw = data[4]
-                    self.front_left_pub_.publish(msg)
-                    msg.z = data[7] > 127
-                    msg.piezo = float(data[7])/255.0
-                    msg.loadcell1_raw = data[6]
-                    msg.loadcell2_raw = data[8]
-                    msg.piezo_raw = data[7]
-                    self.middle_left_pub_.publish(msg)
-                    msg.z = data[10] > 127
-                    msg.piezo = float(data[10])/255.0
-                    msg.loadcell1_raw = data[9]
-                    msg.loadcell2_raw = data[11]
-                    msg.piezo_raw = data[10]
-                    self.rear_left_pub_.publish(msg)
-                    msg.z = data[13] > 127
-                    msg.piezo = float(data[13])/255.0
-                    msg.loadcell1_raw = data[12]
-                    msg.loadcell2_raw = data[14]
-                    msg.piezo_raw = data[13]
-                    self.rear_right_pub_.publish(msg)
-                    msg.z = data[16] > 127
-                    msg.piezo = float(data[16])/255.0
-                    msg.loadcell1_raw = data[15]
-                    msg.loadcell2_raw = data[17]
-                    msg.piezo_raw = data[16]
-                    self.middle_right_pub_.publish(msg)
-                    msg.z = data[1] > 127
-                    msg.piezo = float(data[1])
-                    msg.loadcell1_raw = data[0]
-                    msg.loadcell2_raw = data[2]
-                    msg.piezo_raw = data[1]
-                    self.front_right_pub_.publish(msg)
+                
+                if (checksum & 0xff) == data[21]:
+                    self.publish_sensor_data(data)
+                # チェックサム不一致の場合は次のバイトから同期を試みる（ループ継続）
+            # ヘッダ不一致の場合もループ継続して次を探す
 
-                    attitude = Attitude()
-                    attitude.roll = (data[18] if data[18] < 128 else data[18] - 255)/127*pi
-                    attitude.pitch = (data[19] if data[19] < 128 else data[19] - 255)/127*pi
-                    attitude.yaw = (data[20] if data[20] < 128 else data[20] - 255)/127*pi
-                    self.attitude_pub.publish(attitude)
-                    # self.get_logger().info('  vaild checksum {0} == {1}'.format(int(checksum) & 0xff, data[21]))
-                else:
-                    # self.get_logger().warn('invaild checksum {0} != {1}'.format(int(checksum) & 0xff, data[21]))
-                    while self.sensor.in_waiting == 0:
-                        time.sleep(0.0001)
-                    self.sensor.read(1)
-                # self.get_logger().info('data[18-20]: {0},{1},{2}'.format(data[18],data[19],data[20]))
+    def publish_sensor_data(self, data):
+        # 各脚のパブリッシュ（メッセージインスタンスを分けることで安全性を確保）
+        def create_and_fill(l1, p, l2, raw_p, z_threshold=127):
+            msg = ForceSensor()
+            msg.loadcell1_raw = l1
+            msg.loadcell2_raw = l2
+            msg.piezo_raw = raw_p
+            msg.piezo = float(raw_p)/255.0
+            msg.z = raw_p > z_threshold
+            return msg
+
+        self.front_left_pub_.publish(create_and_fill(data[3], data[4], data[5], data[4]))
+        self.middle_left_pub_.publish(create_and_fill(data[6], data[7], data[8], data[7]))
+        self.rear_left_pub_.publish(create_and_fill(data[9], data[10], data[11], data[10]))
+        self.rear_right_pub_.publish(create_and_fill(data[12], data[13], data[14], data[13]))
+        self.middle_right_pub_.publish(create_and_fill(data[15], data[16], data[17], data[16]))
+        self.front_right_pub_.publish(create_and_fill(data[0], data[1], data[2], data[1]))
+
+        attitude = Attitude()
+        attitude.roll = (data[18] if data[18] < 128 else data[18] - 255)/127*pi
+        attitude.pitch = (data[19] if data[19] < 128 else data[19] - 255)/127*pi
+        attitude.yaw = (data[20] if data[20] < 128 else data[20] - 255)/127*pi
+        self.attitude_pub.publish(attitude)
 
 
 def main(args=None):

@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 from hapthexa_msgs.msg import ForceSensor
 from hapthexa_msgs.msg import Empty
@@ -22,10 +21,26 @@ class ForceSensorCorrection(Node):
 
     def __init__(self):
         super().__init__('force_sensor')
-        self._force_sensor_raw_sub = self.create_subscription(ForceSensor, 'force_sensor_raw', self.force_sensor_raw_sub_callback,10)
-        self._force_sensor_pub = self.create_publisher(ForceSensor, 'force_sensor', 10)
+        
+        # QoS設定: 送信側（forcesensor_read）に合わせてBest Effortに設定
+        qos_profile = QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT)
 
-        self._force_sensor_raw_sub = self.create_subscription(Empty, 'calibrate_signal', self.calibrate_signal_sub_callback,10)
+        self._force_sensor_raw_sub = self.create_subscription(
+            ForceSensor, 
+            'force_sensor_raw', 
+            self.force_sensor_raw_sub_callback,
+            qos_profile)
+        
+        self._force_sensor_pub = self.create_publisher(
+            ForceSensor, 
+            'force_sensor', 
+            qos_profile)
+
+        self._calibrate_signal_sub = self.create_subscription(
+            Empty, 
+            'calibrate_signal', 
+            self.calibrate_signal_sub_callback,
+            10) # 信号はReliableで良い
 
         self.declare_parameter("loadcell1_zero", 127)
         self.declare_parameter("loadcell2_zero", 127)
