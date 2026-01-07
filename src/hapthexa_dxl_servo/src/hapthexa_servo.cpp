@@ -4,6 +4,7 @@
 #include "hapthexa_msgs/msg/leg_args.hpp"
 #include "hapthexa_msgs/srv/stop_leg.hpp"
 #include "hapthexa_msgs/srv/change_current.hpp"
+#include <std_srvs/srv/set_bool.hpp>
 #include <eigen3/Eigen/Geometry>
 #include <thread>
 #include <chrono>
@@ -250,6 +251,22 @@ public:
                 RCLCPP_INFO(this->get_logger(), "%d\n", dxl_wb.writeRegister(leg_num2servo_num[req->num]+2, "Goal_Current", req->current_tibia,&log));
             });
 
+        server_torque = this->create_service<std_srvs::srv::SetBool>(
+            "hapthexa/torque_enable",
+            [&](std::shared_ptr<std_srvs::srv::SetBool::Request> req, std::shared_ptr<std_srvs::srv::SetBool::Response> res) {
+                const char *log;
+                bool success = true;
+                for (int id = 1; id <= 18; id++) {
+                    if (!dxl_wb.torque(id, req->data, &log)) {
+                        RCLCPP_ERROR(this->get_logger(), "Failed to set torque for ID %d: %s", id, log);
+                        success = false;
+                    }
+                }
+                res->success = success;
+                res->message = req->data ? "Torque Enabled" : "Torque Disabled";
+                RCLCPP_INFO(this->get_logger(), "Torque %s", res->message.c_str());
+            });
+
         for (int i = 0; i < 6; i++)
         {
             present_leg_args_pubs[i] = this->create_publisher<hapthexa_msgs::msg::LegArgs>("hapthexa/leg/" + leg_names[i] + "/present_leg_args", rclcpp::QoS(10));
@@ -307,6 +324,7 @@ private:
     std::array<rclcpp::Subscription<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> sub_;
     rclcpp::Service<hapthexa_msgs::srv::StopLeg>::SharedPtr server_stop;
     rclcpp::Service<hapthexa_msgs::srv::ChangeCurrent>::SharedPtr server_current;
+    rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr server_torque;
     std::array<std::string, 6> leg_names = {"front_left", "middle_left", "rear_left", "rear_right", "middle_right", "front_right"};
     std::array<rclcpp::Publisher<hapthexa_msgs::msg::LegArgs>::SharedPtr, 6> present_leg_args_pubs;
     rclcpp::TimerBase::SharedPtr timer_;

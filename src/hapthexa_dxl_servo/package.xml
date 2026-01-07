@@ -18,6 +18,9 @@
   <build_depend>hapthexa_msgs</build_depend>
   <exec_depend>hapthexa_msgs</exec_depend>
 
+  <build_depend>std_srvs</build_depend>
+  <exec_depend>std_srvs</exec_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

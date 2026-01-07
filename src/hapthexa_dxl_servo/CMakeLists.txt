@@ -40,32 +40,18 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(hapthexa_msgs REQUIRED)
+find_package(dynamixel_sdk REQUIRED)
+find_package(std_srvs REQUIRED)
 
+# ... (rest of the file remains same until ament_target_dependencies)
 
-# build dynamixel workbench as static library
-add_library(dynamixel_workbench STATIC
-  dynamixel_workbench_toolbox/dynamixel_item.cpp
-  dynamixel_workbench_toolbox/dynamixel_driver.cpp
-  dynamixel_workbench_toolbox/dynamixel_tool.cpp
-  dynamixel_workbench_toolbox/dynamixel_workbench.cpp
+ament_target_dependencies(hapthexa_servo
+  rclcpp
+  rclcpp_action
+  hapthexa_msgs
+  dynamixel_sdk
+  std_srvs
 )
-if(APPLE)
-  target_link_libraries(dynamixel_workbench LINK_PUBLIC "/usr/local/lib/libdxl_mac_cpp.dylib")
-elseif(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64")
-#  message("Linux SBC!")
-#  target_link_libraries(dynamixel_workbench LINK_PUBLIC "/usr/local/lib/libdxl_sbc_cpp.so")
-  target_link_libraries(dynamixel_workbench LINK_PUBLIC "/usr/local/lib/libdxl_x64_cpp.so")
-else()
-  target_link_libraries(dynamixel_workbench LINK_PUBLIC "/usr/local/lib/libdxl_x64_cpp.so")
-endif()
-
-add_executable(hapthexa_servo src/hapthexa_servo.cpp)
-target_include_directories(hapthexa_servo PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-)
-target_link_libraries(hapthexa_servo dynamixel_workbench)
-ament_target_dependencies(hapthexa_servo rclcpp hapthexa_msgs)
 
 install(
   TARGETS hapthexa_servo
