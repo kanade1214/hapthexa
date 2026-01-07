@@ -1,16 +1,32 @@
-*.pyc
-*.iml
-*.swp
-.project
-.pydevproject
+# OS / Editors
 .DS_Store
-.idea
-
+.idea/
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+*.swp
+*.iml
+.project
+.pydevproject
 
-# colcon/CMake output
-build
-install
-log
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# colcon / ROS 2 / Build
+build/
+install/
+log/
+logs/
+.catkin_tools/
+.ament_cmake_python/
+
+# Simulation / Heavy data
+*.bag
+*.mcap
