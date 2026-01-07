@@ -207,7 +207,7 @@ def create_gui(node):
             dpg.add_button(label="Power OFF (Torque Disable)", callback=lambda: node.set_torque(False), width=250, height=40)
             dpg.add_spacer(width=20)
             dpg.add_button(label="MOVE TO STANDARD POSE", callback=lambda: node.move_to_standard_pose(), 
-                           width=250, height=40, color=(0, 100, 200))
+                           width=250, height=40)
 
     dpg.show_viewport()
     
