@@ -43,8 +43,29 @@ find_package(hapthexa_msgs REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
 find_package(std_srvs REQUIRED)
 
-# ... (rest of the file remains same until ament_target_dependencies)
 
+# build dynamixel workbench as static library
+add_library(dynamixel_workbench STATIC
+  dynamixel_workbench_toolbox/dynamixel_item.cpp
+  dynamixel_workbench_toolbox/dynamixel_driver.cpp
+  dynamixel_workbench_toolbox/dynamixel_tool.cpp
+  dynamixel_workbench_toolbox/dynamixel_workbench.cpp
+)
+
+target_include_directories(dynamixel_workbench PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+ament_target_dependencies(dynamixel_workbench
+  dynamixel_sdk
+)
+
+add_executable(hapthexa_servo src/hapthexa_servo.cpp)
+target_include_directories(hapthexa_servo PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+target_link_libraries(hapthexa_servo dynamixel_workbench)
 ament_target_dependencies(hapthexa_servo
   rclcpp
   rclcpp_action
