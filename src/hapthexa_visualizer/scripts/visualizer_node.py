@@ -8,6 +8,7 @@ import dearpygui.dearpygui as dpg
 import numpy as np
 import threading
 import math
+import time
 
 class VisualizerNode(Node):
     def __init__(self):
@@ -49,6 +50,10 @@ class VisualizerNode(Node):
         self.pitch_history = [0.0] * self.plot_size
         self.yaw_history = [0.0] * self.plot_size
         self.time_history = list(range(self.plot_size))
+        
+        # New State for Transitions
+        self.is_moving_to_standard = False
+        self.leg_pubs = {name: self.create_publisher(LegArgs, f'hapthexa/leg/{name}/leg_args', 10) for name in self.leg_names}
 
     def set_torque(self, state: bool):
         if not self.torque_client.service_is_ready():
@@ -57,6 +62,40 @@ class VisualizerNode(Node):
         req = SetBool.Request()
         req.data = state
         self.torque_client.call_async(req)
+
+    def move_to_standard_pose(self):
+        if self.is_moving_to_standard:
+            self.get_logger().info('Transition already in progress')
+            return
+        
+        self.is_moving_to_standard = True
+        threading.Thread(target=self._interpolation_worker, daemon=True).start()
+
+    def _interpolation_worker(self):
+        self.get_logger().info('Starting smooth transition to standard pose...')
+        duration = 2.0  # seconds
+        steps = 50
+        dt = duration / steps
+        
+        # Capture current positions
+        start_legs = {name: list(self.legs[name]) for name in self.leg_names}
+        
+        for i in range(1, steps + 1):
+            alpha = i / steps
+            # Quadratic easing for smoother start/stop
+            t = alpha * alpha * (3 - 2 * alpha)
+            
+            for name in self.leg_names:
+                msg = LegArgs()
+                msg.coxa_arg = start_legs[name][0] * (1 - t)
+                msg.femur_arg = start_legs[name][1] * (1 - t)
+                msg.tibia_arg = start_legs[name][2] * (1 - t)
+                self.leg_pubs[name].publish(msg)
+            
+            time.sleep(dt)
+            
+        self.get_logger().info('Standard pose transition completed')
+        self.is_moving_to_standard = False
 
     def attitude_cb(self, msg):
         self.attitude['roll'] = msg.roll
@@ -166,6 +205,9 @@ def create_gui(node):
             dpg.add_text("System Power Control:")
             dpg.add_button(label="Power ON (Torque Enable)", callback=lambda: node.set_torque(True), width=250, height=40)
             dpg.add_button(label="Power OFF (Torque Disable)", callback=lambda: node.set_torque(False), width=250, height=40)
+            dpg.add_spacer(width=20)
+            dpg.add_button(label="MOVE TO STANDARD POSE", callback=lambda: node.move_to_standard_pose(), 
+                           width=250, height=40, color=(0, 100, 200))
 
     dpg.show_viewport()
     
