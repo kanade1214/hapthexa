@@ -31,6 +31,11 @@ class VisualizerNode(Node):
         self.create_subscription(Attitude, 'hapthexa/attitude', self.attitude_cb, 10)
         self.create_subscription(Joy, 'joy', self.joy_cb, 10)
         
+        # Safety Monitor State
+        self.safety_enabled = True
+        self.tilt_limit_deg = 30.0
+        self.is_safe = True
+        
         # Service Client
         self.torque_client = self.create_client(SetBool, 'hapthexa/torque_enable')
 
@@ -56,6 +61,10 @@ class VisualizerNode(Node):
         self.leg_pubs = {name: self.create_publisher(LegArgs, f'hapthexa/leg/{name}/leg_args', 10) for name in self.leg_names}
 
     def set_torque(self, state: bool):
+        if state and not self.is_safe and self.safety_enabled:
+            self.get_logger().warn('Cannot enable torque: Robot tilted beyond safety limit!')
+            return
+
         if not self.torque_client.service_is_ready():
             self.get_logger().warn('Torque service not available')
             return
@@ -102,6 +111,20 @@ class VisualizerNode(Node):
         self.attitude['pitch'] = msg.pitch
         self.attitude['yaw'] = msg.yaw
         
+        # Safety Check
+        limit_rad = math.radians(self.tilt_limit_deg)
+        if self.safety_enabled:
+            # Check roll and pitch. If either exceeds limit, trigger emergency stop.
+            if abs(msg.roll) > limit_rad or abs(msg.pitch) > limit_rad:
+                if self.is_safe:
+                    self.get_logger().error(f"SAFETY TRIGGERED! Tilt exceeds {self.tilt_limit_deg} deg. Emergency Stop.")
+                    self.set_torque(False)
+                    self.is_safe = False
+            else:
+                self.is_safe = True
+        else:
+            self.is_safe = True # Ignore if safety disabled
+
         self.roll_history.pop(0); self.roll_history.append(msg.roll)
         self.pitch_history.pop(0); self.pitch_history.append(msg.pitch)
         self.yaw_history.pop(0); self.yaw_history.append(msg.yaw)
@@ -150,6 +173,17 @@ def create_gui(node):
                         with dpg.plot_axis(dpg.mvYAxis, label="Rad"):
                             dpg.add_line_series(node.time_history, node.roll_history, label="Roll", tag="roll_plot")
                             dpg.add_line_series(node.time_history, node.pitch_history, label="Pitch", tag="pitch_plot")
+
+                # Safety Monitor Section
+                with dpg.collapsing_header(label="Safety Configuration", default_open=True):
+                    dpg.add_checkbox(label="Enable Tilt Safety", default_value=node.safety_enabled, 
+                                     callback=lambda s, a: setattr(node, 'safety_enabled', a))
+                    dpg.add_slider_float(label="Tilt Limit (Deg)", min_value=5.0, max_value=60.0, 
+                                         default_value=node.tilt_limit_deg,
+                                         callback=lambda s, a: setattr(node, 'tilt_limit_deg', a))
+                    dpg.add_text("STATUS: ", tag="safety_status_text")
+                    dpg.add_same_line()
+                    dpg.add_text("SAFE", tag="safety_status_val", color=(0, 255, 0))
 
                 # Joy Section
                 with dpg.collapsing_header(label="Joystick / Commands", default_open=True):
@@ -218,6 +252,14 @@ def create_gui(node):
         dpg.set_value("yaw_text", f"{node.attitude['yaw']:.3f}")
         dpg.set_value("roll_plot", [node.time_history, node.roll_history])
         dpg.set_value("pitch_plot", [node.time_history, node.pitch_history])
+
+        # Update Safety Status
+        if node.is_safe:
+            dpg.set_value("safety_status_val", "SAFE")
+            dpg.configure_item("safety_status_val", color=(0, 255, 0))
+        else:
+            dpg.set_value("safety_status_val", "DANGER / STOPPED")
+            dpg.configure_item("safety_status_val", color=(255, 0, 0))
 
         # Update Joy
         dpg.set_value("joy_x", node.joy['axes'][1] if len(node.joy['axes']) > 1 else 0.0)
